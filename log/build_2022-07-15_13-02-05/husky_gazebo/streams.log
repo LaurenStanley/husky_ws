@@ -1,0 +1,31 @@
+[0.033s] Invoking command in '/home/lauren/husky_ws/build/husky_gazebo': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_gazebo -- -j8 -l8
+[0.079s] Invoked command in '/home/lauren/husky_ws/build/husky_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_gazebo -- -j8 -l8
+[0.101s] Invoking command in '/home/lauren/husky_ws/build/husky_gazebo': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_gazebo
+[0.111s] -- Install configuration: ""
+[0.111s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/gazebo.launch.py
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/realsense.launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/playpen.launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/husky_playpen.launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/multi_husky_playpen.launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/husky_empty_world.launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/husky_playpen.launch.py
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/launch/spawn_husky.launch
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/worlds
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/worlds/clearpath_playpen.world
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/ament_index/resource_index/package_run_dependencies/husky_gazebo
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/ament_index/resource_index/parent_prefix_path/husky_gazebo
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/environment/ament_prefix_path.sh
+[0.112s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/environment/ament_prefix_path.dsv
+[0.113s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/environment/path.sh
+[0.113s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/environment/path.dsv
+[0.113s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/local_setup.bash
+[0.113s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/local_setup.sh
+[0.113s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/local_setup.zsh
+[0.114s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/local_setup.dsv
+[0.116s] -- Installing: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.dsv
+[0.117s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/ament_index/resource_index/packages/husky_gazebo
+[0.117s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/cmake/husky_gazeboConfig.cmake
+[0.117s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/cmake/husky_gazeboConfig-version.cmake
+[0.117s] -- Up-to-date: /home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.xml
+[0.117s] Invoked command in '/home/lauren/husky_ws/build/husky_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_gazebo

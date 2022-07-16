@@ -1,0 +1,45 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lauren/husky_ws/build/husky_viz
+-- Install configuration: ""
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_robot.launch
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_robot.launch.py
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_model.launch
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_model.launch.py
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz/test.rviz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz/model.rviz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz/robot.rviz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/ament_index/resource_index/package_run_dependencies/husky_viz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/ament_index/resource_index/parent_prefix_path/husky_viz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/ament_prefix_path.sh
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/ament_prefix_path.dsv
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/path.sh
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/path.dsv
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.bash
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.sh
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.zsh
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.dsv
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.dsv
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/ament_index/resource_index/packages/husky_viz
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/cmake/husky_vizConfig.cmake
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/cmake/husky_vizConfig-version.cmake
+-- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.xml

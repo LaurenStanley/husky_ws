@@ -1,0 +1,29 @@
+[0.023s] Invoking command in '/home/lauren/husky_ws/build/husky_viz': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_viz -- -j8 -l8
+[0.063s] Invoked command in '/home/lauren/husky_ws/build/husky_viz' returned '0': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_viz -- -j8 -l8
+[0.087s] Invoking command in '/home/lauren/husky_ws/build/husky_viz': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_viz
+[0.098s] -- Install configuration: ""
+[0.098s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch
+[0.098s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_robot.launch
+[0.098s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_robot.launch.py
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_model.launch
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/launch/view_model.launch.py
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz/test.rviz
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz/model.rviz
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/rviz/robot.rviz
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/ament_index/resource_index/package_run_dependencies/husky_viz
+[0.099s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/ament_index/resource_index/parent_prefix_path/husky_viz
+[0.100s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/ament_prefix_path.sh
+[0.100s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/ament_prefix_path.dsv
+[0.103s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/path.sh
+[0.104s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/environment/path.dsv
+[0.104s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.bash
+[0.104s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.sh
+[0.104s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.zsh
+[0.104s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/local_setup.dsv
+[0.104s] -- Installing: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.dsv
+[0.105s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/ament_index/resource_index/packages/husky_viz
+[0.105s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/cmake/husky_vizConfig.cmake
+[0.105s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/cmake/husky_vizConfig-version.cmake
+[0.105s] -- Up-to-date: /home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.xml
+[0.105s] Invoked command in '/home/lauren/husky_ws/build/husky_viz' returned '0': CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/home/lauren/husky_ws/install/husky_desktop:/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_simulator:/home/lauren/husky_ws/install/husky_robot:/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/opt/ros/foxy:/home/lauren/catkin_ws/devel:/home/lauren/rbe502_ros/devel:/opt/ros/noetic /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_viz

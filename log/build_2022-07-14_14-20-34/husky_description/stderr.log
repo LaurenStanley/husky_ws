@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:49 (file):
+  file INSTALL cannot find
+  "/home/lauren/husky_ws/src/husky/husky_description/src": No such file or
+  directory.
+
+

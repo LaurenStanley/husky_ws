@@ -1,0 +1,59 @@
+[0.023s] Invoking command in '/home/lauren/husky_ws/build/husky_control': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/lauren/husky_ws/src/husky/husky_control -DCMAKE_INSTALL_PREFIX=/home/lauren/husky_ws/install/husky_control
+[0.076s] -- The C compiler identification is GNU 9.4.0
+[0.130s] -- The CXX compiler identification is GNU 9.4.0
+[0.135s] -- Check for working C compiler: /usr/bin/cc
+[0.201s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.202s] -- Detecting C compiler ABI info
+[0.269s] -- Detecting C compiler ABI info - done
+[0.288s] -- Detecting C compile features
+[0.288s] -- Detecting C compile features - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++
+[0.373s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.373s] -- Detecting CXX compiler ABI info
+[0.451s] -- Detecting CXX compiler ABI info - done
+[0.463s] -- Detecting CXX compile features
+[0.463s] -- Detecting CXX compile features - done
+[0.466s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.491s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.491s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.782s] -- Configuring done
+[0.784s] -- Generating done
+[0.786s] -- Build files have been written to: /home/lauren/husky_ws/build/husky_control
+[0.790s] Invoked command in '/home/lauren/husky_ws/build/husky_control' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/lauren/husky_ws/src/husky/husky_control -DCMAKE_INSTALL_PREFIX=/home/lauren/husky_ws/install/husky_control
+[0.792s] Invoking command in '/home/lauren/husky_ws/build/husky_control': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_control -- -j8 -l8
+[0.833s] Invoked command in '/home/lauren/husky_ws/build/husky_control' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_control -- -j8 -l8
+[0.859s] Invoking command in '/home/lauren/husky_ws/build/husky_control': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_control
+[0.867s] -- Install configuration: ""
+[0.867s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config
+[0.868s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/teleop_interactive_markers.yaml
+[0.868s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/teleop_logitech.yaml
+[0.868s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/teleop_ps4.yaml
+[0.868s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/gazebo_interface.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/public_interface.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/imu_filter.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/empty.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/control.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/twist_mux.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/config/localization.yaml
+[0.869s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/launch
+[0.870s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/launch/control.launch
+[0.870s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/launch/control.launch.py
+[0.870s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/launch/teleop_joy.launch.py
+[0.870s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/launch/teleop_base.launch.py
+[0.870s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/launch/teleop.launch
+[0.870s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/ament_index/resource_index/package_run_dependencies/husky_control
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/ament_index/resource_index/parent_prefix_path/husky_control
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/environment/ament_prefix_path.sh
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/environment/ament_prefix_path.dsv
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/environment/path.sh
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/environment/path.dsv
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/local_setup.bash
+[0.871s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/local_setup.sh
+[0.872s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/local_setup.zsh
+[0.872s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/local_setup.dsv
+[0.876s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/package.dsv
+[0.876s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/ament_index/resource_index/packages/husky_control
+[0.876s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/cmake/husky_controlConfig.cmake
+[0.876s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/cmake/husky_controlConfig-version.cmake
+[0.876s] -- Installing: /home/lauren/husky_ws/install/husky_control/share/husky_control/package.xml
+[0.877s] Invoked command in '/home/lauren/husky_ws/build/husky_control' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_control

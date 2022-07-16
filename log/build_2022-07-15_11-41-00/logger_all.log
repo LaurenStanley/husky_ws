@@ -1,0 +1,764 @@
+[0.128s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.129s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa5aaee7a60>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa5aaee7a60>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa5aaef0040>)
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.150s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lauren/husky_ws'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_base) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_base' with type 'ros.ament_cmake' and name 'husky_base'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_bringup) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_bringup' with type 'ros.ament_cmake' and name 'husky_bringup'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_control) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_control' with type 'ros.ament_cmake' and name 'husky_control'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_description) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_description' with type 'ros.ament_cmake' and name 'husky_description'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_desktop) by extension 'ros'
+[0.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_desktop' with type 'ros.ament_cmake' and name 'husky_desktop'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_gazebo) by extension 'ros'
+[0.172s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_gazebo' with type 'ros.ament_cmake' and name 'husky_gazebo'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_msgs) by extension 'ros'
+[0.173s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_msgs' with type 'ros.ament_cmake' and name 'husky_msgs'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_navigation) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_navigation) ignored
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_robot) by extension 'ros'
+[0.174s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_robot' with type 'ros.ament_cmake' and name 'husky_robot'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_simulator) by extension 'ros'
+[0.174s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_simulator' with type 'ros.ament_cmake' and name 'husky_simulator'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/husky/husky_viz) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/husky/husky_viz' with type 'ros.ament_cmake' and name 'husky_viz'
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 346 installed packages in /opt/ros/foxy
+[0.207s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /opt/ros/noetic
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.277s] DEBUG:colcon.colcon_core.verb:Building package 'husky_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_description', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_description', 'symlink_install': False, 'test_result_base': None}
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_target' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'husky_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_msgs', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'husky_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'husky_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_base', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_base', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'husky_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_control', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_control', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'husky_viz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_viz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_viz', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_viz', 'symlink_install': False, 'test_result_base': None}
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'cmake_target' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'husky_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.282s] DEBUG:colcon.colcon_core.verb:Building package 'husky_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_bringup', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'husky_desktop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_desktop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_desktop', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_desktop', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'husky_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_gazebo', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'cmake_target' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'husky_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.286s] DEBUG:colcon.colcon_core.verb:Building package 'husky_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_robot', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_robot', 'symlink_install': False, 'test_result_base': None}
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_target' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.287s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.287s] DEBUG:colcon.colcon_core.verb:Building package 'husky_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lauren/husky_ws/build/husky_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lauren/husky_ws/install/husky_simulator', 'merge_install': False, 'path': '/home/lauren/husky_ws/src/husky/husky_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.287s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.291s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.292s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_description' with build type 'ament_cmake'
+[0.292s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_description'
+[0.296s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.296s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.296s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.299s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.300s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.303s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_msgs' with build type 'ament_cmake'
+[0.303s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_msgs'
+[0.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.311s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_description': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_description -- -j8 -l8
+[0.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_msgs -- -j8 -l8
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_description -- -j8 -l8
+[0.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_description': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_description
+[0.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_description)
+[0.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_description
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description' for CMake module files
+[0.414s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description' for CMake config files
+[0.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_description', 'cmake_prefix_path')
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_description/share/husky_description/hook/cmake_prefix_path.ps1'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_description/share/husky_description/hook/cmake_prefix_path.dsv'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_description/share/husky_description/hook/cmake_prefix_path.sh'
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/bin'
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/lib/pkgconfig/husky_description.pc'
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/lib/python3.8/site-packages'
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/bin'
+[0.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.ps1'
+[0.421s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.dsv'
+[0.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.sh'
+[0.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.bash'
+[0.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.zsh'
+[0.423s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_description/share/colcon-core/packages/husky_description)
+[0.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_description)
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description' for CMake module files
+[0.448s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description' for CMake config files
+[0.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_description', 'cmake_prefix_path')
+[0.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_description/share/husky_description/hook/cmake_prefix_path.ps1'
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_description/share/husky_description/hook/cmake_prefix_path.dsv'
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_description/share/husky_description/hook/cmake_prefix_path.sh'
+[0.451s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/bin'
+[0.451s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/lib/pkgconfig/husky_description.pc'
+[0.451s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/lib/python3.8/site-packages'
+[0.451s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_description/bin'
+[0.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.ps1'
+[0.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.dsv'
+[0.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.sh'
+[0.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.bash'
+[0.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_description/share/husky_description/package.zsh'
+[0.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_description/share/colcon-core/packages/husky_description)
+[0.456s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_control' with build type 'ament_cmake'
+[0.456s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_control'
+[0.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.457s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.461s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.462s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.465s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_viz' with build type 'ament_cmake'
+[0.466s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_viz'
+[0.467s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.468s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.472s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.474s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_control': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_control -- -j8 -l8
+[0.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_viz': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_viz -- -j8 -l8
+[0.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_viz' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_viz -- -j8 -l8
+[0.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_control' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_control -- -j8 -l8
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_msgs -- -j8 -l8
+[0.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_viz': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_viz
+[0.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_control': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_control
+[0.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_viz)
+[0.564s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz' for CMake module files
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_viz' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_viz
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz' for CMake config files
+[0.567s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_viz', 'cmake_prefix_path')
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/hook/cmake_prefix_path.ps1'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/hook/cmake_prefix_path.dsv'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/hook/cmake_prefix_path.sh'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/bin'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/lib/pkgconfig/husky_viz.pc'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/lib/python3.8/site-packages'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/bin'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.ps1'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.dsv'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.sh'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.bash'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.zsh'
+[0.577s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_viz/share/colcon-core/packages/husky_viz)
+[0.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_control)
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control' for CMake module files
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_control' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_control
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control' for CMake config files
+[0.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_control', 'cmake_prefix_path')
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_control/share/husky_control/hook/cmake_prefix_path.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_control/share/husky_control/hook/cmake_prefix_path.dsv'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_control/share/husky_control/hook/cmake_prefix_path.sh'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/bin'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/lib/pkgconfig/husky_control.pc'
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/lib/python3.8/site-packages'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/bin'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.ps1'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.dsv'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.sh'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.bash'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.zsh'
+[0.592s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_control/share/colcon-core/packages/husky_control)
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_msgs
+[0.600s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_viz)
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz' for CMake module files
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz' for CMake config files
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_viz', 'cmake_prefix_path')
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/hook/cmake_prefix_path.ps1'
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/hook/cmake_prefix_path.dsv'
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/hook/cmake_prefix_path.sh'
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/bin'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/lib/pkgconfig/husky_viz.pc'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/lib/python3.8/site-packages'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_viz/bin'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.ps1'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.dsv'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.sh'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.bash'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_viz/share/husky_viz/package.zsh'
+[0.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_viz/share/colcon-core/packages/husky_viz)
+[0.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_control)
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control' for CMake module files
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control' for CMake config files
+[0.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_control', 'cmake_prefix_path')
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_control/share/husky_control/hook/cmake_prefix_path.ps1'
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_control/share/husky_control/hook/cmake_prefix_path.dsv'
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_control/share/husky_control/hook/cmake_prefix_path.sh'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/bin'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/lib/pkgconfig/husky_control.pc'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/lib/python3.8/site-packages'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_control/bin'
+[0.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.ps1'
+[0.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.dsv'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.sh'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.bash'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_control/share/husky_control/package.zsh'
+[0.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_control/share/colcon-core/packages/husky_control)
+[0.626s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_gazebo' with build type 'ament_cmake'
+[0.626s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_gazebo'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.631s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.632s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_gazebo': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_gazebo -- -j8 -l8
+[0.646s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_msgs)
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs' for CMake module files
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs' for CMake config files
+[0.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_msgs
+[0.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_msgs', 'cmake_prefix_path')
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/cmake_prefix_path.ps1'
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/cmake_prefix_path.dsv'
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/cmake_prefix_path.sh'
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/lib'
+[0.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_msgs', 'ld_library_path_lib')
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/ld_library_path_lib.ps1'
+[0.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/ld_library_path_lib.dsv'
+[0.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/ld_library_path_lib.sh'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/bin'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/lib/pkgconfig/husky_msgs.pc'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages'
+[0.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_msgs', 'pythonpath')
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/pythonpath.ps1'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/pythonpath.dsv'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/pythonpath.sh'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/bin'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.dsv'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.sh'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.bash'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.zsh'
+[0.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_msgs/share/colcon-core/packages/husky_msgs)
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_gazebo' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_gazebo -- -j8 -l8
+[0.699s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_gazebo': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_gazebo
+[0.710s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_msgs)
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs' for CMake module files
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs' for CMake config files
+[0.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_msgs', 'cmake_prefix_path')
+[0.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/cmake_prefix_path.ps1'
+[0.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/cmake_prefix_path.dsv'
+[0.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/cmake_prefix_path.sh'
+[0.717s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/lib'
+[0.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_msgs', 'ld_library_path_lib')
+[0.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/ld_library_path_lib.ps1'
+[0.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/ld_library_path_lib.dsv'
+[0.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/ld_library_path_lib.sh'
+[0.719s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/bin'
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/lib/pkgconfig/husky_msgs.pc'
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages'
+[0.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_msgs', 'pythonpath')
+[0.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/pythonpath.ps1'
+[0.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/pythonpath.dsv'
+[0.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/hook/pythonpath.sh'
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_msgs/bin'
+[0.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.ps1'
+[0.724s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.dsv'
+[0.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.sh'
+[0.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.bash'
+[0.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_msgs/share/husky_msgs/package.zsh'
+[0.726s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_msgs/share/colcon-core/packages/husky_msgs)
+[0.726s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_base' with build type 'ament_cmake'
+[0.726s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_base'
+[0.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.731s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.732s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.735s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_desktop' with build type 'ament_cmake'
+[0.735s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_desktop'
+[0.737s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.737s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.740s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.741s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_gazebo)
+[0.747s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo' for CMake module files
+[0.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_gazebo' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_gazebo
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo' for CMake config files
+[0.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_gazebo', 'cmake_prefix_path')
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/hook/cmake_prefix_path.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/hook/cmake_prefix_path.dsv'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/hook/cmake_prefix_path.sh'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/bin'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/lib/pkgconfig/husky_gazebo.pc'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/lib/python3.8/site-packages'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/bin'
+[0.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.ps1'
+[0.753s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.sh'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.bash'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.zsh'
+[0.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_gazebo/share/colcon-core/packages/husky_gazebo)
+[0.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_base': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_base -- -j8 -l8
+[0.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_desktop': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_desktop -- -j8 -l8
+[0.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_gazebo)
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo' for CMake module files
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo' for CMake config files
+[0.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_gazebo', 'cmake_prefix_path')
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/hook/cmake_prefix_path.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/hook/cmake_prefix_path.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/hook/cmake_prefix_path.sh'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/bin'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/lib/pkgconfig/husky_gazebo.pc'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/lib/python3.8/site-packages'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_gazebo/bin'
+[0.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.ps1'
+[0.785s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.dsv'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.sh'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.bash'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_gazebo/share/husky_gazebo/package.zsh'
+[0.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_gazebo/share/colcon-core/packages/husky_gazebo)
+[0.787s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_simulator' with build type 'ament_cmake'
+[0.787s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_simulator'
+[0.789s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.789s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.793s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.794s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_simulator': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_simulator -- -j8 -l8
+[0.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_desktop' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_desktop -- -j8 -l8
+[0.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_desktop': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_desktop
+[0.843s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_desktop)
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop' for CMake module files
+[0.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_base' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_base -- -j8 -l8
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop' for CMake config files
+[0.847s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_desktop' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_viz:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_desktop
+[0.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_desktop', 'cmake_prefix_path')
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/hook/cmake_prefix_path.ps1'
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/hook/cmake_prefix_path.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/hook/cmake_prefix_path.sh'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/bin'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/lib/pkgconfig/husky_desktop.pc'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/lib/python3.8/site-packages'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/bin'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.ps1'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.dsv'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.sh'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.bash'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.zsh'
+[0.854s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_desktop/share/colcon-core/packages/husky_desktop)
+[0.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_simulator' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_simulator -- -j8 -l8
+[0.875s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_desktop)
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop' for CMake module files
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop' for CMake config files
+[0.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_desktop', 'cmake_prefix_path')
+[0.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/hook/cmake_prefix_path.ps1'
+[0.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/hook/cmake_prefix_path.dsv'
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/hook/cmake_prefix_path.sh'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/bin'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/lib/pkgconfig/husky_desktop.pc'
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/lib/python3.8/site-packages'
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_desktop/bin'
+[0.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.ps1'
+[0.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.dsv'
+[0.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.sh'
+[0.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.bash'
+[0.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_desktop/share/husky_desktop/package.zsh'
+[0.884s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_desktop/share/colcon-core/packages/husky_desktop)
+[0.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_simulator': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_simulator
+[0.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_base': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_base
+[0.897s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_simulator)
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator' for CMake module files
+[0.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_simulator' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_gazebo:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_simulator
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator' for CMake config files
+[0.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_simulator', 'cmake_prefix_path')
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/hook/cmake_prefix_path.ps1'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/hook/cmake_prefix_path.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/hook/cmake_prefix_path.sh'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/bin'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/lib/pkgconfig/husky_simulator.pc'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/lib/python3.8/site-packages'
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/bin'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.dsv'
+[0.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.sh'
+[0.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.bash'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.zsh'
+[0.912s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_simulator/share/colcon-core/packages/husky_simulator)
+[0.915s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_base)
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base' for CMake module files
+[0.918s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_base' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_base
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base' for CMake config files
+[0.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_base', 'cmake_prefix_path')
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/cmake_prefix_path.ps1'
+[0.921s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/cmake_prefix_path.dsv'
+[0.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/cmake_prefix_path.sh'
+[0.922s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/lib'
+[0.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_base', 'ld_library_path_lib')
+[0.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/ld_library_path_lib.ps1'
+[0.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/ld_library_path_lib.dsv'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/ld_library_path_lib.sh'
+[0.924s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/bin'
+[0.924s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/lib/pkgconfig/husky_base.pc'
+[0.924s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/lib/python3.8/site-packages'
+[0.924s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/bin'
+[0.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.ps1'
+[0.926s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.dsv'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.sh'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.bash'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.zsh'
+[0.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_base/share/colcon-core/packages/husky_base)
+[0.933s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_simulator)
+[0.935s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator' for CMake module files
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator' for CMake config files
+[0.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_simulator', 'cmake_prefix_path')
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/hook/cmake_prefix_path.ps1'
+[0.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/hook/cmake_prefix_path.dsv'
+[0.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/hook/cmake_prefix_path.sh'
+[0.938s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/bin'
+[0.938s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/lib/pkgconfig/husky_simulator.pc'
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/lib/python3.8/site-packages'
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_simulator/bin'
+[0.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.ps1'
+[0.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.sh'
+[0.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.bash'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_simulator/share/husky_simulator/package.zsh'
+[0.942s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_simulator/share/colcon-core/packages/husky_simulator)
+[0.967s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_base)
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base' for CMake module files
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base' for CMake config files
+[0.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_base', 'cmake_prefix_path')
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/cmake_prefix_path.ps1'
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/cmake_prefix_path.dsv'
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/cmake_prefix_path.sh'
+[0.972s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/lib'
+[0.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_base', 'ld_library_path_lib')
+[0.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/ld_library_path_lib.ps1'
+[0.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/ld_library_path_lib.dsv'
+[0.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_base/share/husky_base/hook/ld_library_path_lib.sh'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/bin'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/lib/pkgconfig/husky_base.pc'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/lib/python3.8/site-packages'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_base/bin'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.ps1'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.dsv'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.sh'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.bash'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_base/share/husky_base/package.zsh'
+[0.978s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_base/share/colcon-core/packages/husky_base)
+[0.978s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_bringup' with build type 'ament_cmake'
+[0.978s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_bringup'
+[0.980s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.980s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.983s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[0.984s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[0.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_bringup': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_bringup -- -j8 -l8
+[1.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_bringup' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_bringup -- -j8 -l8
+[1.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_bringup': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_bringup
+[1.064s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_bringup)
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup' for CMake module files
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup' for CMake config files
+[1.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_bringup' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_bringup
+[1.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_bringup', 'cmake_prefix_path')
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/hook/cmake_prefix_path.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/hook/cmake_prefix_path.dsv'
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/hook/cmake_prefix_path.sh'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/lib'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/bin'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/lib/pkgconfig/husky_bringup.pc'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/lib/python3.8/site-packages'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/bin'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.ps1'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.dsv'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.sh'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.bash'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.zsh'
+[1.074s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_bringup/share/colcon-core/packages/husky_bringup)
+[1.094s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_bringup)
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup' for CMake module files
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup' for CMake config files
+[1.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_bringup', 'cmake_prefix_path')
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/hook/cmake_prefix_path.ps1'
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/hook/cmake_prefix_path.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/hook/cmake_prefix_path.sh'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/lib'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/bin'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/lib/pkgconfig/husky_bringup.pc'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/lib/python3.8/site-packages'
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_bringup/bin'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.sh'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.bash'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_bringup/share/husky_bringup/package.zsh'
+[1.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_bringup/share/colcon-core/packages/husky_bringup)
+[1.103s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lauren/husky_ws/src/husky/husky_robot' with build type 'ament_cmake'
+[1.103s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lauren/husky_ws/src/husky/husky_robot'
+[1.104s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.105s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.109s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/catkin_ws/devel'
+[1.110s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/home/lauren/rbe502_ros/devel'
+[1.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_robot': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_robot -- -j8 -l8
+[1.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_robot' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_robot -- -j8 -l8
+[1.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lauren/husky_ws/build/husky_robot': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_robot
+[1.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_robot)
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot' for CMake module files
+[1.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lauren/husky_ws/build/husky_robot' returned '0': AMENT_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lauren/husky_ws/install/husky_bringup:/home/lauren/husky_ws/install/husky_control:/home/lauren/husky_ws/install/husky_base:/home/lauren/husky_ws/install/husky_msgs:/home/lauren/husky_ws/install/husky_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/lauren/husky_ws/install/husky_base/lib:/home/lauren/husky_ws/install/husky_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lauren/husky_ws/install/husky_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_robot
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot' for CMake config files
+[1.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_robot', 'cmake_prefix_path')
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/hook/cmake_prefix_path.ps1'
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/hook/cmake_prefix_path.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/hook/cmake_prefix_path.sh'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/bin'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/lib/pkgconfig/husky_robot.pc'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/lib/python3.8/site-packages'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/bin'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.ps1'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.dsv'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.sh'
+[1.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.bash'
+[1.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.zsh'
+[1.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_robot/share/colcon-core/packages/husky_robot)
+[1.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_robot)
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot' for CMake module files
+[1.224s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot' for CMake config files
+[1.224s] Level 1:colcon.colcon_core.shell:create_environment_hook('husky_robot', 'cmake_prefix_path')
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/hook/cmake_prefix_path.ps1'
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/hook/cmake_prefix_path.dsv'
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/hook/cmake_prefix_path.sh'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/bin'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/lib/pkgconfig/husky_robot.pc'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/lib/python3.8/site-packages'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/lauren/husky_ws/install/husky_robot/bin'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.ps1'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.dsv'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.sh'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.bash'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/lauren/husky_ws/install/husky_robot/share/husky_robot/package.zsh'
+[1.230s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lauren/husky_ws/install/husky_robot/share/colcon-core/packages/husky_robot)
+[1.231s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.231s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.231s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.231s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.237s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.238s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.238s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.249s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.251s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lauren/husky_ws/install/local_setup.ps1'
+[1.252s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lauren/husky_ws/install/_local_setup_util_ps1.py'
+[1.253s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lauren/husky_ws/install/setup.ps1'
+[1.254s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lauren/husky_ws/install/local_setup.sh'
+[1.255s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lauren/husky_ws/install/_local_setup_util_sh.py'
+[1.255s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lauren/husky_ws/install/setup.sh'
+[1.257s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lauren/husky_ws/install/local_setup.bash'
+[1.257s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lauren/husky_ws/install/setup.bash'
+[1.258s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lauren/husky_ws/install/local_setup.zsh'
+[1.259s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lauren/husky_ws/install/setup.zsh'
