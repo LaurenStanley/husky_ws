@@ -1,4 +1,0 @@
-Invoking command in '/home/lauren/husky_ws/build/husky_description': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_description -- -j8 -l8
-Invoked command in '/home/lauren/husky_ws/build/husky_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/lauren/husky_ws/build/husky_description -- -j8 -l8
-Invoking command in '/home/lauren/husky_ws/build/husky_description': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_description
-Invoked command in '/home/lauren/husky_ws/build/husky_description' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/lauren/husky_ws/build/husky_description
