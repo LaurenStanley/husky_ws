@@ -27,7 +27,7 @@
   <xacro:arg name="laser_3d_xyz" default="$(optenv HUSKY_LASER_3D_XYZ 0 0 0)" />
   <xacro:arg name="laser_3d_rpy" default="$(optenv HUSKY_LASER_3D_RPY 0 0 0)" />
 
-  <xacro:arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED false)" />
+  <xacro:arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED 1)" />
   <xacro:arg name="realsense_xyz" default="$(optenv HUSKY_REALSENSE_XYZ 0 0 0)" />
   <xacro:arg name="realsense_rpy" default="$(optenv HUSKY_REALSENSE_RPY 0 0 0)" />
   <xacro:arg name="realsense_mount" default="$(optenv HUSKY_REALSENSE_MOUNT_FRAME sensor_arch_mount_link)" />
@@ -202,7 +202,7 @@
   <xacro:property name="sensorbar_needed_lidar"     value="$(arg laser_3d_enabled)" />
   <xacro:property name="sensorbar_needed_zed2" value="$(arg zed2_enabled)" />
 
-  <xacro:if value="true">
+  <xacro:if value="$(arg sensor_arch)">
     <xacro:sensor_arch prefix="" parent="top_plate_link" size="$(arg sensor_arch_height)">
         <origin xyz="$(optenv HUSKY_SENSOR_ARCH_OFFSET 0 0 0.5)" rpy="$(optenv HUSKY_SENSOR_ARCH_RPY 0 0 0)"/>
     </xacro:sensor_arch>
@@ -218,6 +218,17 @@
       </joint>
       <xacro:intel_realsense_mount prefix="camera" topic="realsense" parent_link="realsense_mountpoint"/>
     </xacro:if>
+    
+  <!-- Custom addition to xacro file to include ZED2 camera ; by Dev Vaibhav-->
+  <!-- add the zed2 to the sensor arch if needed -->
+  <xacro:if value="$(arg zed2_enabled)">
+    <link name="zed2_mountpoint"/>
+    <joint name="zed2_mountpoint_joint" type="fixed">
+      <origin xyz="$(arg zed2_xyz)" rpy="$(arg zed2_rpy)" />
+      <parent link="$(arg zed2_mount)"/>
+      <child link="zed2_mountpoint" />
+    </joint>
+  </xacro:if>
 
     <ros2_control name="${prefix}husky_hardware" type="system">
       <hardware>
