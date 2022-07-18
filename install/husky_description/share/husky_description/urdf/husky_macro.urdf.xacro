@@ -1,14 +1,25 @@
 <?xml version="1.0"?>
 <robot name="husky" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:arg name="laser_ust10_front_enabled" default="$(optenv HUSKY_UST10_ENABLED 1)" />
+  <!-- lms1xx_xyz broken - but I don't think we're using this.
+  <xacro:arg name="laser_enabled" default="$(optenv HUSKY_LMS1XX_ENABLED 0)" />
+  <xacro:arg name="laser_xyz" default="$(optenv HUSKY_LMS1XX_XYZ 0.2206 0.0 0.00635)" />
+  <xacro:arg name="laser_rpy" default="$(optenv HUSKY_LMS1XX_RPY 0.0 0.0 0.0)" />
+  
+  <xacro:arg name="laser_secondary_enabled" default="$(optenv HUSKY_LMS1XX_SECONDARY_ENABLED 0)" />
+  <xacro:arg name="laser_secondary_xyz" default="$(optenv HUSKY_LMS1XX_SECONDARY_XYZ -0.2206 0.0 0.00635)" />
+  <xacro:arg name="laser_secondary_rpy" default="$(optenv HUSKY_LMS1XX_SECONDARY_RPY 0.0 0.0 3.14159)" />
+-->
+
+
+  <xacro:arg name="laser_ust10_front_enabled" default="$(optenv HUSKY_UST10_ENABLED 0)" />
   <xacro:arg name="laser_ust10_front_prefix"  default="$(optenv HUSKY_UST10_PREFIX front)" />
   <xacro:arg name="laser_ust10_front_parent"  default="$(optenv HUSKY_UST10_PARENT top_plate_link)" />
   <xacro:arg name="laser_ust10_front_topic"   default="$(optenv HUSKY_UST10_TOPIC front/scan)" />
   <xacro:arg name="laser_ust10_front_xyz"     default="$(optenv HUSKY_UST10_XYZ 0.2206 0.0 0.00635)" />
   <xacro:arg name="laser_ust10_front_rpy"     default="$(optenv HUSKY_UST10_RPY 0 0 0)" />
   
-  <xacro:arg name="laser_ust10_rear_enabled"  default="$(optenv HUSKY_UST10_SECONDARY_ENABLED 1)" />
+  <xacro:arg name="laser_ust10_rear_enabled"  default="$(optenv HUSKY_UST10_SECONDARY_ENABLED 0)" />
   <xacro:arg name="laser_ust10_rear_prefix"   default="$(optenv HUSKY_UST10_SECONDARY_PREFIX rear)" />
   <xacro:arg name="laser_ust10_rear_parent"   default="$(optenv HUSKY_UST10_SECONDARY_PARENT top_plate_link)" />
   <xacro:arg name="laser_ust10_rear_topic"    default="$(optenv HUSKY_UST10_SECONDARY_TOPIC rear/scan)" />
@@ -18,9 +29,8 @@
   <xacro:arg name="laser_3d_enabled" default="$(optenv HUSKY_LASER_3D_ENABLED 1)" />
   <xacro:arg name="laser_3d_xyz" default="$(optenv HUSKY_LASER_3D_XYZ 0 0 0)" />
   <xacro:arg name="laser_3d_rpy" default="$(optenv HUSKY_LASER_3D_RPY 0 0 0)" />
-  <xacro:arg name="laser_3d_mount" default="$(optenv HUSKY_LASER_3D_MOUNT_FRAME sensor_arch_mount_link)" />
 
-  <xacro:arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED 1)" />
+  <xacro:arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED 0)" />
   <xacro:arg name="realsense_xyz" default="$(optenv HUSKY_REALSENSE_XYZ 0 0 0)" />
   <xacro:arg name="realsense_rpy" default="$(optenv HUSKY_REALSENSE_RPY 0 0 0)" />
   <xacro:arg name="realsense_mount" default="$(optenv HUSKY_REALSENSE_MOUNT_FRAME sensor_arch_mount_link)" />
@@ -53,8 +63,8 @@
   <xacro:include filename="$(find husky_description)/urdf/wheel.urdf.xacro" />
   <xacro:include filename="$(find husky_description)/urdf/accessories/intel_realsense.urdf.xacro" />
   <xacro:include filename="$(find husky_description)/urdf/accessories/hokuyo_ust10.urdf.xacro" />
+  <!--<xacro:include filename="$(find husky_description)/urdf/accessories/sick_lms1xx_mount.urdf.xacro" /> -->
   <xacro:include filename="$(find husky_description)/urdf/accessories/vlp16_mount.urdf.xacro"/>
-  <xacro:include filename="$(find husky_description)/urdf/accessories/VLP-16.urdf.xacro"/>
   <xacro:include filename="$(find husky_description)/urdf/accessories/sensor_arch.urdf.xacro"/>
   <xacro:include filename="$(find husky_description)/urdf/accessories/zed2.xacro"/>
   
@@ -210,19 +220,6 @@
       </joint>
       <xacro:intel_realsense_mount prefix="camera" topic="realsense" parent_link="realsense_mountpoint"/>
     </xacro:if>
-    
-    <!--
-    Add the 3d laser to the sensor arch if needed
-  -->
-  <xacro:if value="$(arg laser_3d_enabled)">
-    <link name="laser_3d_mountpoint"/>
-    <joint name="laser_3d_mountpoint_joint" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <parent link="$(arg laser_3d_mount)"/>
-      <child link="laser_3d_mountpoint" />
-    </joint>
-    <xacro:laser_vlp16_mount prefix="" parent_link="realsense_mountpoint" topic="points"/>
-  </xacro:if>
     
   <!-- Custom addition to xacro file to include ZED2 camera ; by Dev Vaibhav-->
   <!-- add the zed2 to the sensor arch if needed -->
@@ -531,7 +528,160 @@
   </xacro:if>
 
   
-  
+  <!--
+    Add the 3d laser to the sensor arch if needed
+  -->
+  <xacro:if value="$(arg laser_3d_enabled)">
+    <!-- <xacro:vlp16_mount prefix="" parent_link="sensor_arch_mount_link" topic="$(optenv HUSKY_LASER_3D_TOPIC points)">
+      <origin xyz="$(arg laser_3d_xyz)" rpy="$(arg laser_3d_rpy)" />
+    </xacro:vlp16_mount> -->
+    
+    <joint name="velodyne_base_mount_joint" type="fixed">
+      <!-- <xacro:insert_block name="origin" />  -->  Still need to figure what is this?
+      <parent link="sensor_arch_mount_link"/>
+      <child link="velodyne_base_link"/>
+    </joint>
+
+    <link name="velodyne_base_link">
+      <inertial>
+        <mass value="0.83"/>
+        <origin xyz="0 0 0.03585"/>
+        <inertia ixx="${(0.83 * (3.0*0.0516*0.0516 + 0.0717*0.0717)) / 12.0}" ixy="0" ixz="0"
+          iyy="${(0.83 * (3.0*0.0516*0.0516 + 0.0717*0.0717)) / 12.0}" iyz="0"
+          izz="${0.5 * 0.83 * (0.0516*0.0516)}"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="file://$(find velodyne_description)/meshes/VLP16_base_1.dae" />
+        </geometry>
+      </visual>
+      <visual>
+        <geometry>
+          <mesh filename="file://$(find velodyne_description)/meshes/VLP16_base_2.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0 0 0.03585"/>
+        <geometry>
+          <cylinder radius="0.0516" length="0.0717"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="velodyne_base_scan_joint" type="fixed" >
+      <origin xyz="0 0 0.0377" rpy="0 0 0" />
+      <parent link="velodyne_base_link" />
+      <child link="velodyne"/>
+    </joint>
+
+    <link name="velodyne">
+      <inertial>
+        <mass value="0.01"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
+      </inertial>
+      <visual>
+        <origin xyz="0 0 -0.0377" />
+        <geometry>
+          <mesh filename="file://$(find velodyne_description)/meshes/VLP16_scan.dae" />
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- Gazebo requires the velodyne_gazebo_plugins package -->
+    <gazebo reference="velodyne">
+      <xacro:if value="false">
+        <sensor type="gpu_ray" name="velodyne-VLP16">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>false</visualize>
+          <update_rate>10</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>1875</samples>
+                <resolution>1</resolution>
+                <min_angle>-${M_PI}</min_angle>
+                <max_angle>${M_PI}</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>16</samples>
+                <resolution>1</resolution>
+                <min_angle>-${15.0*M_PI/180.0}</min_angle>
+                <max_angle> ${15.0*M_PI/180.0}</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.3</min>
+              <max>131.0</max>
+              <resolution>0.001</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </ray>
+          <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_velodyne_laser.so">
+            <ros>
+              <namespace>/velodyne</namespace>
+              <remapping>~/out:=/velodyne_points</remapping>
+            </ros>
+            <tf_prefix>""</tf_prefix>
+            <frame_name>velodyne</frame_name>
+            <organize_cloud>false</organize_cloud>
+            <min_range>0.9</min_range>
+            <max_range>130.0</max_range>
+            <gaussian_noise>0.008</gaussian_noise>
+          </plugin>
+        </sensor>
+      </xacro:if>
+      <xacro:unless value="false">
+        <sensor type="ray" name="velodyne-VLP16">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>false</visualize>
+          <update_rate>10</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>1875</samples>
+                <resolution>1</resolution>
+                <min_angle>-${M_PI}</min_angle>
+                <max_angle>${M_PI}</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>16</samples>
+                <resolution>1</resolution>
+                <min_angle>-${15.0*M_PI/180.0}</min_angle>
+                <max_angle> ${15.0*M_PI/180.0}</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.3</min>
+              <max>131.0</max>
+              <resolution>0.001</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </ray>
+          <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_velodyne_laser.so">
+            <ros>
+              <namespace>/velodyne</namespace>
+              <remapping>~/out:=/velodyne_points</remapping>
+            </ros>
+            <!-- <tf_prefix>""</tf_prefix>   This might be the reason we can't see robot in rviz2  -->
+            <frame_name>velodyne</frame_name>
+            <organize_cloud>false</organize_cloud>
+            <min_range>0.9</min_range>
+            <max_range>130.0</max_range>
+            <gaussian_noise>0.008</gaussian_noise>
+          </plugin>
+        </sensor>
+      </xacro:unless>
+    </gazebo>
+  </xacro:if>
   
     <ros2_control name="${prefix}husky_hardware" type="system">
       <hardware>
