@@ -1,17 +1,6 @@
 <?xml version="1.0"?>
 <robot name="husky" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- lms1xx_xyz broken - but I don't think we're using this.
-  <xacro:arg name="laser_enabled" default="$(optenv HUSKY_LMS1XX_ENABLED 0)" />
-  <xacro:arg name="laser_xyz" default="$(optenv HUSKY_LMS1XX_XYZ 0.2206 0.0 0.00635)" />
-  <xacro:arg name="laser_rpy" default="$(optenv HUSKY_LMS1XX_RPY 0.0 0.0 0.0)" />
-  
-  <xacro:arg name="laser_secondary_enabled" default="$(optenv HUSKY_LMS1XX_SECONDARY_ENABLED 0)" />
-  <xacro:arg name="laser_secondary_xyz" default="$(optenv HUSKY_LMS1XX_SECONDARY_XYZ -0.2206 0.0 0.00635)" />
-  <xacro:arg name="laser_secondary_rpy" default="$(optenv HUSKY_LMS1XX_SECONDARY_RPY 0.0 0.0 3.14159)" />
--->
-
-
   <xacro:arg name="laser_ust10_front_enabled" default="$(optenv HUSKY_UST10_ENABLED 1)" />
   <xacro:arg name="laser_ust10_front_prefix"  default="$(optenv HUSKY_UST10_PREFIX front)" />
   <xacro:arg name="laser_ust10_front_parent"  default="$(optenv HUSKY_UST10_PARENT top_plate_link)" />
@@ -26,11 +15,12 @@
   <xacro:arg name="laser_ust10_rear_xyz"      default="$(optenv HUSKY_UST10_SECONDARY_XYZ -0.2206 0.0 0.00635)" />
   <xacro:arg name="laser_ust10_rear_rpy"      default="$(optenv HUSKY_UST10_SECONDARY_RPY 0 0 3.14159)" />
 
-  <xacro:arg name="laser_3d_enabled" default="$(optenv HUSKY_LASER_3D_ENABLED 0)" />
+  <xacro:arg name="laser_3d_enabled" default="$(optenv HUSKY_LASER_3D_ENABLED 1)" />
   <xacro:arg name="laser_3d_xyz" default="$(optenv HUSKY_LASER_3D_XYZ 0 0 0)" />
   <xacro:arg name="laser_3d_rpy" default="$(optenv HUSKY_LASER_3D_RPY 0 0 0)" />
+  <xacro:arg name="laser_3d_mount" default="$(optenv HUSKY_LASER_3D_MOUNT_FRAME sensor_arch_mount_link)" />
 
-  <xacro:arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED 0)" />
+  <xacro:arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED 1)" />
   <xacro:arg name="realsense_xyz" default="$(optenv HUSKY_REALSENSE_XYZ 0 0 0)" />
   <xacro:arg name="realsense_rpy" default="$(optenv HUSKY_REALSENSE_RPY 0 0 0)" />
   <xacro:arg name="realsense_mount" default="$(optenv HUSKY_REALSENSE_MOUNT_FRAME sensor_arch_mount_link)" />
@@ -63,9 +53,8 @@
   <xacro:include filename="$(find husky_description)/urdf/wheel.urdf.xacro" />
   <xacro:include filename="$(find husky_description)/urdf/accessories/intel_realsense.urdf.xacro" />
   <xacro:include filename="$(find husky_description)/urdf/accessories/hokuyo_ust10.urdf.xacro" />
-  <!--<xacro:include filename="$(find husky_description)/urdf/accessories/sick_lms1xx_mount.urdf.xacro" />
   <xacro:include filename="$(find husky_description)/urdf/accessories/vlp16_mount.urdf.xacro"/>
-  -->
+  <xacro:include filename="$(find husky_description)/urdf/accessories/VLP-16.urdf.xacro"/>
   <xacro:include filename="$(find husky_description)/urdf/accessories/sensor_arch.urdf.xacro"/>
   <xacro:include filename="$(find husky_description)/urdf/accessories/zed2.xacro"/>
   
@@ -221,6 +210,19 @@
       </joint>
       <xacro:intel_realsense_mount prefix="camera" topic="realsense" parent_link="realsense_mountpoint"/>
     </xacro:if>
+    
+    <!--
+    Add the 3d laser to the sensor arch if needed
+  -->
+  <xacro:if value="$(arg laser_3d_enabled)">
+    <link name="laser_3d_mountpoint"/>
+    <joint name="laser_3d_mountpoint_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="$(arg laser_3d_mount)"/>
+      <child link="laser_3d_mountpoint" />
+    </joint>
+    <xacro:laser_vlp16_mount prefix="" parent_link="realsense_mountpoint" topic="points"/>
+  </xacro:if>
     
   <!-- Custom addition to xacro file to include ZED2 camera ; by Dev Vaibhav-->
   <!-- add the zed2 to the sensor arch if needed -->
@@ -529,14 +531,7 @@
   </xacro:if>
 
   
-  <!--
-    Add the 3d laser to the sensor arch if needed
-  -->
-  <xacro:if value="$(arg laser_3d_enabled)">
-    <xacro:vlp16_mount prefix="" parent_link="sensor_arch_mount_link" topic="$(optenv HUSKY_LASER_3D_TOPIC points)">
-      <origin xyz="$(arg laser_3d_xyz)" rpy="$(arg laser_3d_rpy)" />
-    </xacro:vlp16_mount>
-  </xacro:if>
+  
   
     <ros2_control name="${prefix}husky_hardware" type="system">
       <hardware>

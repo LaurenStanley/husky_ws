@@ -28,7 +28,6 @@
   <depend>lms1xx</depend>
   <depend>velodyne_description</depend>
 
-
   <depend>urdf</depend>
 
   <export>
