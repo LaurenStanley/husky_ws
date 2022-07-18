@@ -20,6 +20,14 @@
   <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <depend>fath_pivot_mount_description</depend>
+  <depend>flir_camera_description</depend>
+  <depend>realsense2_description</depend>
+  <depend>xacro</depend>
+  <depend>lms1xx</depend>
+  <depend>velodyne_description</depend>
+
 
   <depend>urdf</depend>
 

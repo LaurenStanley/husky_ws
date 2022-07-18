@@ -4,15 +4,15 @@
   <xacro:macro name="sensor_arch" params="prefix parent size:=510 *origin">
 
       <!-- Robot Base -->
-      <xacro:macro name="box_inertia" params="m w h d">
+      <!--xacro:macro name="box_inertia" params="m w h d">
         <inertial>
           <origin xyz="0 0 0" rpy="0 0 0"/>
           <mass value="${m}"/>
           <inertia ixx="${(m/12) * (h*h + d*d)}" ixy="0.0" ixz="0.0" iyy="${(m/12) * (w*w + d*d)}" iyz="0.0" izz="${(m/12) * (w*w + h*h)}"/>
         </inertial>
-      </xacro:macro>
+      </xacro:macro>-->
   
-  
+  <link name="${prefix}sensor_arch_base_link" />
   <link name="${prefix}sensor_arch_mount_link">
      <origin xyz="0 0 0" rpy="0 0 0"/>
      <visual>
@@ -27,16 +27,22 @@
         </geometry>
     </collision>
 
-    <xacro:box_inertia m=".01" w=".01" d=".01" h=".01"/>
+    <!--<xacro:box_inertia m=".01" w=".01" d=".01" h=".01"/>-->
 
   </link>
     
-  <joint name="${prefix}sensor_arch_mount" type="fixed">
-  	    <xacro:insert_block name="origin" />
+  <joint name="${prefix}sensor_arch_base_link_joint" type="fixed">
             <parent link="${parent}" />
-            <child link="${prefix}sensor_arch_mount_link" />            
-  </joint>
-  
+            <child link="${prefix}sensor_arch_base_link" />
+            <xacro:insert_block name="origin" />
+        </joint>
+
+        <!-- Attach the sensor arch to the top plate -->
+        <joint name="${prefix}sensor_arch_mount" type="fixed">
+             <parent link="${prefix}sensor_arch_base_link"/>
+             <child link="${prefix}sensor_arch_mount_link"/>
+             <origin xyz="0 0 ${size/1000}" rpy="0 0 0" />
+        </joint>
 </xacro:macro>
 
 </robot>

@@ -83,7 +83,7 @@
         <origin xyz="0.0115 0 0.0100" rpy="1.570796 0 1.570796" />
         <geometry>
           <!-- Origin of this mesh is the base of the bracket. -->
-          <mesh filename="package://realsense2_description/meshes/d415.stl" />
+          <mesh filename="file://$(find husky_description)/meshes/accessories/realsense.stl" />
         </geometry>
         <material name="white" />
       </visual>
