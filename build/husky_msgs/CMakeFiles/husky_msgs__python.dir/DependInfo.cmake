@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/msg/_husky_status_s.c" "/home/lauren/husky_ws/build/husky_msgs/CMakeFiles/husky_msgs__python.dir/rosidl_generator_py/husky_msgs/msg/_husky_status_s.c.o"
+  "/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/msg/_husky_status_s.c" "/home/dev/husky_ws/build/husky_msgs/CMakeFiles/husky_msgs__python.dir/rosidl_generator_py/husky_msgs/msg/_husky_status_s.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -26,8 +26,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lauren/husky_ws/build/husky_msgs/CMakeFiles/husky_msgs__rosidl_generator_c.dir/DependInfo.cmake"
-  "/home/lauren/husky_ws/build/husky_msgs/CMakeFiles/husky_msgs__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/dev/husky_ws/build/husky_msgs/CMakeFiles/husky_msgs__rosidl_generator_c.dir/DependInfo.cmake"
+  "/home/dev/husky_ws/build/husky_msgs/CMakeFiles/husky_msgs__rosidl_typesupport_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

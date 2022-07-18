@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lauren/husky_ws/src/husky/husky_robot
+CMAKE_SOURCE_DIR = /home/dev/husky_ws/src/husky/husky_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_robot
+CMAKE_BINARY_DIR = /home/dev/husky_ws/build/husky_robot
 
 # Utility rule file for husky_robot_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_robot
 include CMakeFiles/husky_robot_uninstall.dir/progress.make
 
 CMakeFiles/husky_robot_uninstall:
-	/usr/bin/cmake -P /home/lauren/husky_ws/build/husky_robot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/dev/husky_ws/build/husky_robot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 husky_robot_uninstall: CMakeFiles/husky_robot_uninstall
 husky_robot_uninstall: CMakeFiles/husky_robot_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/husky_robot_uninstall.dir/clean:
 .PHONY : CMakeFiles/husky_robot_uninstall.dir/clean
 
 CMakeFiles/husky_robot_uninstall.dir/depend:
-	cd /home/lauren/husky_ws/build/husky_robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lauren/husky_ws/src/husky/husky_robot /home/lauren/husky_ws/src/husky/husky_robot /home/lauren/husky_ws/build/husky_robot /home/lauren/husky_ws/build/husky_robot /home/lauren/husky_ws/build/husky_robot/CMakeFiles/husky_robot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dev/husky_ws/build/husky_robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/husky_ws/src/husky/husky_robot /home/dev/husky_ws/src/husky/husky_robot /home/dev/husky_ws/build/husky_robot /home/dev/husky_ws/build/husky_robot /home/dev/husky_ws/build/husky_robot/CMakeFiles/husky_robot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/husky_robot_uninstall.dir/depend
 

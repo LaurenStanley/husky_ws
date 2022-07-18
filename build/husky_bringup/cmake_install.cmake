@@ -1,8 +1,8 @@
-# Install script for directory: /home/lauren/husky_ws/src/husky/husky_bringup
+# Install script for directory: /home/dev/husky_ws/src/husky/husky_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lauren/husky_ws/install/husky_bringup")
+  set(CMAKE_INSTALL_PREFIX "/home/dev/husky_ws/install/husky_bringup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,22 +39,22 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE DIRECTORY FILES
-    "/home/lauren/husky_ws/src/husky/husky_bringup/config"
-    "/home/lauren/husky_ws/src/husky/husky_bringup/launch"
-    "/home/lauren/husky_ws/src/husky/husky_bringup/udev"
+    "/home/dev/husky_ws/src/husky/husky_bringup/config"
+    "/home/dev/husky_ws/src/husky/husky_bringup/launch"
+    "/home/dev/husky_ws/src/husky/husky_bringup/udev"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/husky_bringup" TYPE PROGRAM FILES "/home/lauren/husky_ws/src/husky/husky_bringup/scripts/install")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/husky_bringup" TYPE PROGRAM FILES "/home/dev/husky_ws/src/husky/husky_bringup/scripts/install")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/husky_bringup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/husky_bringup")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/husky_bringup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/husky_bringup")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -62,7 +62,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup/environment" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup/environment" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -70,42 +70,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup/environment" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup/environment" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_index/share/ament_index/resource_index/packages/husky_bringup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/dev/husky_ws/build/husky_bringup/ament_cmake_index/share/ament_index/resource_index/packages/husky_bringup")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup/cmake" TYPE FILE FILES
-    "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_core/husky_bringupConfig.cmake"
-    "/home/lauren/husky_ws/build/husky_bringup/ament_cmake_core/husky_bringupConfig-version.cmake"
+    "/home/dev/husky_ws/build/husky_bringup/ament_cmake_core/husky_bringupConfig.cmake"
+    "/home/dev/husky_ws/build/husky_bringup/ament_cmake_core/husky_bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/lauren/husky_ws/src/husky/husky_bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_bringup" TYPE FILE FILES "/home/dev/husky_ws/src/husky/husky_bringup/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -116,5 +116,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lauren/husky_ws/build/husky_bringup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dev/husky_ws/build/husky_bringup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

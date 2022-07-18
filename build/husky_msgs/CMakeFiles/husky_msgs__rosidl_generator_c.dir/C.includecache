@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_c/husky_msgs/msg/detail/husky_status__functions.c
+/home/dev/husky_ws/build/husky_msgs/rosidl_generator_c/husky_msgs/msg/detail/husky_status__functions.c
 husky_msgs/msg/detail/husky_status__functions.h
-/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__functions.h
+/home/dev/husky_ws/build/husky_msgs/rosidl_generator_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__functions.h
 assert.h
 -
 stdbool.h
@@ -18,7 +18,7 @@ stdlib.h
 string.h
 -
 std_msgs/msg/detail/header__functions.h
-/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_c/husky_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
+/home/dev/husky_ws/build/husky_msgs/rosidl_generator_c/husky_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h

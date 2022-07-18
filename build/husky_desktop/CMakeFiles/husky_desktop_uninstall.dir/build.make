@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lauren/husky_ws/src/husky/husky_desktop
+CMAKE_SOURCE_DIR = /home/dev/husky_ws/src/husky/husky_desktop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_desktop
+CMAKE_BINARY_DIR = /home/dev/husky_ws/build/husky_desktop
 
 # Utility rule file for husky_desktop_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_desktop
 include CMakeFiles/husky_desktop_uninstall.dir/progress.make
 
 CMakeFiles/husky_desktop_uninstall:
-	/usr/bin/cmake -P /home/lauren/husky_ws/build/husky_desktop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/dev/husky_ws/build/husky_desktop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 husky_desktop_uninstall: CMakeFiles/husky_desktop_uninstall
 husky_desktop_uninstall: CMakeFiles/husky_desktop_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/husky_desktop_uninstall.dir/clean:
 .PHONY : CMakeFiles/husky_desktop_uninstall.dir/clean
 
 CMakeFiles/husky_desktop_uninstall.dir/depend:
-	cd /home/lauren/husky_ws/build/husky_desktop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lauren/husky_ws/src/husky/husky_desktop /home/lauren/husky_ws/src/husky/husky_desktop /home/lauren/husky_ws/build/husky_desktop /home/lauren/husky_ws/build/husky_desktop /home/lauren/husky_ws/build/husky_desktop/CMakeFiles/husky_desktop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dev/husky_ws/build/husky_desktop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/husky_ws/src/husky/husky_desktop /home/dev/husky_ws/src/husky/husky_desktop /home/dev/husky_ws/build/husky_desktop /home/dev/husky_ws/build/husky_desktop /home/dev/husky_ws/build/husky_desktop/CMakeFiles/husky_desktop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/husky_desktop_uninstall.dir/depend
 

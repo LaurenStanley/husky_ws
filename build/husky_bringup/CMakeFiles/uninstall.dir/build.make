@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lauren/husky_ws/src/husky/husky_bringup
+CMAKE_SOURCE_DIR = /home/dev/husky_ws/src/husky/husky_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_bringup
+CMAKE_BINARY_DIR = /home/dev/husky_ws/build/husky_bringup
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/lauren/husky_ws/build/husky_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lauren/husky_ws/src/husky/husky_bringup /home/lauren/husky_ws/src/husky/husky_bringup /home/lauren/husky_ws/build/husky_bringup /home/lauren/husky_ws/build/husky_bringup /home/lauren/husky_ws/build/husky_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dev/husky_ws/build/husky_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/husky_ws/src/husky/husky_bringup /home/dev/husky_ws/src/husky/husky_bringup /home/dev/husky_ws/build/husky_bringup /home/dev/husky_ws/build/husky_bringup /home/dev/husky_ws/build/husky_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

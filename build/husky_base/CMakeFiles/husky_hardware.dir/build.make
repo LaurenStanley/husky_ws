@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lauren/husky_ws/src/husky/husky_base
+CMAKE_SOURCE_DIR = /home/dev/husky_ws/src/husky/husky_base
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_base
+CMAKE_BINARY_DIR = /home/dev/husky_ws/build/husky_base
 
 # Include any dependencies generated for this target.
 include CMakeFiles/husky_hardware.dir/depend.make
@@ -58,147 +58,147 @@ include CMakeFiles/husky_hardware.dir/progress.make
 include CMakeFiles/husky_hardware.dir/flags.make
 
 CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/husky_hardware.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/husky_hardware.cpp
+CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/husky_hardware.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/husky_hardware.cpp
 
 CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/husky_hardware.cpp > CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/husky_hardware.cpp > CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/husky_hardware.cpp -o CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/husky_hardware.cpp -o CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.s
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o: CMakeFiles/husky_hardware.dir/flags.make
-CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o: /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o -c /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp
+CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o: /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o -c /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp > CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.i
 
 CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp -o CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.s
 
 # Object files for target husky_hardware
 husky_hardware_OBJECTS = \
@@ -348,7 +348,7 @@ libhusky_hardware.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libhusky_hardware.so: /opt/ros/foxy/lib/librcpputils.so
 libhusky_hardware.so: /opt/ros/foxy/lib/librcutils.so
 libhusky_hardware.so: CMakeFiles/husky_hardware.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lauren/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libhusky_hardware.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dev/husky_ws/build/husky_base/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libhusky_hardware.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/husky_hardware.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -361,6 +361,6 @@ CMakeFiles/husky_hardware.dir/clean:
 .PHONY : CMakeFiles/husky_hardware.dir/clean
 
 CMakeFiles/husky_hardware.dir/depend:
-	cd /home/lauren/husky_ws/build/husky_base && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lauren/husky_ws/src/husky/husky_base /home/lauren/husky_ws/src/husky/husky_base /home/lauren/husky_ws/build/husky_base /home/lauren/husky_ws/build/husky_base /home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dev/husky_ws/build/husky_base && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/husky_ws/src/husky/husky_base /home/dev/husky_ws/src/husky/husky_base /home/dev/husky_ws/build/husky_base /home/dev/husky_ws/build/husky_base /home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/husky_hardware.dir/depend
 

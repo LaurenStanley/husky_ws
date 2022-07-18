@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -Dhusky_hardware_EXPORTS
 
-CXX_INCLUDES = -I/home/lauren/husky_ws/src/husky/husky_base/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/dev/husky_ws/src/husky/husky_base/include -isystem /opt/ros/foxy/include 
 
