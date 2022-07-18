@@ -1,1 +1,1 @@
-urdf:xacro
+gazebo_ros:urdf:xacro
