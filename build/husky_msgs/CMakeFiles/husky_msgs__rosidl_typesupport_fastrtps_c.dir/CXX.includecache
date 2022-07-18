@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_status__type_support_c.cpp
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_status__type_support_c.cpp
 husky_msgs/msg/detail/husky_status__rosidl_typesupport_fastrtps_c.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__rosidl_typesupport_fastrtps_c.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__rosidl_typesupport_fastrtps_c.h
 cassert
 -
 limits
@@ -16,21 +16,21 @@ limits
 string
 -
 rosidl_typesupport_fastrtps_c/identifier.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/rosidl_typesupport_fastrtps_c/identifier.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/rosidl_typesupport_fastrtps_c/identifier.h
 rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
 rosidl_typesupport_fastrtps_cpp/message_type_support.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/rosidl_typesupport_fastrtps_cpp/message_type_support.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/rosidl_typesupport_fastrtps_cpp/message_type_support.h
 husky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 husky_msgs/msg/detail/husky_status__struct.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__struct.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__struct.h
 husky_msgs/msg/detail/husky_status__functions.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__functions.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/husky_msgs/msg/detail/husky_status__functions.h
 fastcdr/Cdr.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/fastcdr/Cdr.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/fastcdr/Cdr.h
 std_msgs/msg/detail/header__functions.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_typesupport_fastrtps_c/husky_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h

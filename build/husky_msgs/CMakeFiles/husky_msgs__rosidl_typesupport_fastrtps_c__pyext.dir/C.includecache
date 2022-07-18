@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/_husky_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/_husky_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 Python.h
 -
 stdbool.h
@@ -14,19 +14,19 @@ stdbool.h
 stdint.h
 -
 rosidl_runtime_c/visibility_control.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/visibility_control.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/visibility_control.h
 rosidl_runtime_c/message_type_support_struct.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/message_type_support_struct.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/service_type_support_struct.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/service_type_support_struct.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/service_type_support_struct.h
 rosidl_runtime_c/action_type_support_struct.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/action_type_support_struct.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/rosidl_runtime_c/action_type_support_struct.h
 husky_msgs/msg/detail/husky_status__type_support.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/husky_msgs/msg/detail/husky_status__type_support.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/husky_msgs/msg/detail/husky_status__type_support.h
 husky_msgs/msg/detail/husky_status__struct.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/husky_msgs/msg/detail/husky_status__struct.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/husky_msgs/msg/detail/husky_status__struct.h
 husky_msgs/msg/detail/husky_status__functions.h
-/home/dev/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/husky_msgs/msg/detail/husky_status__functions.h
+/home/lauren/husky_ws/build/husky_msgs/rosidl_generator_py/husky_msgs/husky_msgs/msg/detail/husky_status__functions.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h

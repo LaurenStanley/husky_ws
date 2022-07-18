@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/husky_ws/src/husky/husky_control
+CMAKE_SOURCE_DIR = /home/lauren/husky_ws/src/husky/husky_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/husky_ws/build/husky_control
+CMAKE_BINARY_DIR = /home/lauren/husky_ws/build/husky_control
 
 # Utility rule file for husky_control_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dev/husky_ws/build/husky_control
 include CMakeFiles/husky_control_uninstall.dir/progress.make
 
 CMakeFiles/husky_control_uninstall:
-	/usr/bin/cmake -P /home/dev/husky_ws/build/husky_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/lauren/husky_ws/build/husky_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 husky_control_uninstall: CMakeFiles/husky_control_uninstall
 husky_control_uninstall: CMakeFiles/husky_control_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/husky_control_uninstall.dir/clean:
 .PHONY : CMakeFiles/husky_control_uninstall.dir/clean
 
 CMakeFiles/husky_control_uninstall.dir/depend:
-	cd /home/dev/husky_ws/build/husky_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/husky_ws/src/husky/husky_control /home/dev/husky_ws/src/husky/husky_control /home/dev/husky_ws/build/husky_control /home/dev/husky_ws/build/husky_control /home/dev/husky_ws/build/husky_control/CMakeFiles/husky_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lauren/husky_ws/build/husky_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lauren/husky_ws/src/husky/husky_control /home/lauren/husky_ws/src/husky/husky_control /home/lauren/husky_ws/build/husky_control /home/lauren/husky_ws/build/husky_control /home/lauren/husky_ws/build/husky_control/CMakeFiles/husky_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/husky_control_uninstall.dir/depend
 

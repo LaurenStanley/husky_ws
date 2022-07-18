@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o"
-  "/home/dev/husky_ws/src/husky/husky_base/src/husky_hardware.cpp" "/home/dev/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Logger.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Logger.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_cmd.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_data.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_data.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Message_request.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Message_request.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Number.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Number.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/Transport.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/Transport.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/crc.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/crc.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy/linux_serial.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/horizon_legacy_wrapper.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/horizon_legacy_wrapper.cpp.o"
+  "/home/lauren/husky_ws/src/husky/husky_base/src/husky_hardware.cpp" "/home/lauren/husky_ws/build/husky_base/CMakeFiles/husky_hardware.dir/src/husky_hardware.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -28,7 +28,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dev/husky_ws/src/husky/husky_base/include"
+  "/home/lauren/husky_ws/src/husky/husky_base/include"
   "/opt/ros/foxy/include"
   )
 
