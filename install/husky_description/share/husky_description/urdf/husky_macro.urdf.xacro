@@ -149,6 +149,7 @@
       <parent link="${prefix}base_link" />
       <child link="${prefix}gps_link" />
     </joint>
+    
 
     <!-- Husky wheel macros -->
     <xacro:husky_wheel wheel_prefix="${prefix}front_left">
