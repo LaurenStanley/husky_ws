@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="$(arg name)">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="husky">
   <!-- robot name parameter -->
   <xacro:arg name="name" default="" />
 
@@ -12,8 +12,8 @@
   <!-- Load husky description -->
   <xacro:husky prefix="$(arg prefix)" />
 
-
-  <xacro:if value="$(arg is_sim)">
+  <xacro:arg name="is_sim" default="true" />
+  <xacro:if value="true">
 
     <gazebo>
       <plugin name="$(arg prefix)gazebo_ros2_control" filename="libgazebo_ros2_control.so">

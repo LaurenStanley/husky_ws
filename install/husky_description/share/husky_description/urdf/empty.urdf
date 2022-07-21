@@ -1,6 +1,1 @@
-<robot>
-  <!-- This file is a placeholder which is included by default from
-       husky.urdf.xacro. If a robot is being customized and requires
-       additional URDF, set the HUSKY_URDF_EXTRAS environment variable
-       to the full path of the file you would like included. -->
-</robot>
+/home/lauren/husky_ws/src/husky/husky_description/urdf/empty.urdf
