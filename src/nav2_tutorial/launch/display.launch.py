@@ -83,6 +83,22 @@ def generate_launch_description():
             on_exit=[spawn_husky_velocity_controller],
         )
     )
+    # Gazebo server
+    gzserver = ExecuteProcess(
+        cmd=['gzserver',
+             '-s', 'libgazebo_ros_init.so',
+             '-s', 'libgazebo_ros_factory.so',
+             world_path],
+        output='screen',
+    )
+
+    # Gazebo client
+    gzclient = ExecuteProcess(
+        cmd=['gzclient'],
+        output='screen',
+        # condition=IfCondition(LaunchConfiguration('gui')),
+    )
+
     
     spawn_entity = launch_ros.actions.Node(
       package='gazebo_ros',
@@ -116,12 +132,18 @@ def generate_launch_description():
         
         launch.actions.DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, description='Absolute path to rviz config file'),
         launch.actions.DeclareLaunchArgument(name='use_sim_time', default_value='True', description='Flag to enable use_sim_time'),
-        launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen'),
+        #launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen'),
         
         joint_state_publisher_node,
         robot_state_publisher_node,
+        spawn_joint_state_broadcaster,
+        diffdrive_controller_spawn_callback,
+        gzserver,
+        gzclient,
         spawn_entity,
         robot_localization_node,
-        rviz_node
+        rviz_node,
+        launch_husky_control,
+        launch_husky_teleop_base
     ])
 
