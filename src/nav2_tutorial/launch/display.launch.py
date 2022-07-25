@@ -52,7 +52,7 @@ def generate_launch_description():
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'use_sim_time': True}, robot_description]
+        parameters=[robot_description]
     )
    
     joint_state_publisher_node = launch_ros.actions.Node(
@@ -114,6 +114,7 @@ def generate_launch_description():
        output='screen',
        parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'), {'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
+
     
     # Launch husky_control/control.launch.py which is just robot_localization.
     launch_husky_control = IncludeLaunchDescription(
@@ -126,6 +127,12 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(PathJoinSubstitution(
         [FindPackageShare("husky_control"), 'launch', 'teleop_base.launch.py'])))
         
+    # Launch husky_control/control.launch.py which is just robot_localization.
+    launch_scan_from_velodye = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(PathJoinSubstitution(
+        [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))
+        
+           
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
                                             description='Absolute path to robot urdf file'),
@@ -144,6 +151,8 @@ def generate_launch_description():
         robot_localization_node,
         rviz_node,
         launch_husky_control,
-        launch_husky_teleop_base
+        launch_husky_teleop_base,
+        launch_scan_from_velodye,
+        
     ])
 
