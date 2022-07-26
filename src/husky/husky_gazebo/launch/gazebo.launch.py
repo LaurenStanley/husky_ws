@@ -47,6 +47,7 @@ def generate_launch_description():
         package='controller_manager',
         executable='spawner.py',
         arguments=['husky_velocity_controller', '-c', '/controller_manager'],
+        parameters=[{'use_sim_time':True}],
         output='screen',
     )
 
@@ -54,14 +55,14 @@ def generate_launch_description():
         package="robot_state_publisher",
         executable="robot_state_publisher",
         output="screen",
-        parameters=[{'use_sim_time': True}, robot_description],
+        parameters=[robot_description, {'use_sim_time':True}],
     )
 
     spawn_joint_state_broadcaster = Node(
         package='controller_manager',
         executable='spawner.py',
         arguments=['joint_state_broadcaster', '-c', '/controller_manager'],
-        output='screen',
+        output='screen'
     )
 
     # Make sure spawn_husky_velocity_controller starts after spawn_joint_state_broadcaster

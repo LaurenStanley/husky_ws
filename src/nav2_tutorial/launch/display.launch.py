@@ -17,6 +17,11 @@ def generate_launch_description():
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
     world_path=os.path.join(pkg_share_tutorial, 'world/my_world.sdf')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/urdf_config.rviz')
+    #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
+    nav2_dir = FindPackageShare(package='nav2_bringup').find('nav2_bringup')
+    nav2_launch_dir = os.path.join(nav2_dir, 'launch')
+    namespace = LaunchConfiguration('namespace')
+    use_namespace = LaunchConfiguration('use_namespace')
     
     config_husky_velocity_controller = PathJoinSubstitution(
         [FindPackageShare("husky_control"), "config", "control.yaml"])
@@ -47,26 +52,27 @@ def generate_launch_description():
         executable='spawner.py',
         arguments=['husky_velocity_controller', '-c', '/controller_manager'],
         output='screen',
+        parameters=[{'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
     
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[robot_description]
+        parameters=[robot_description,{'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
    
     joint_state_publisher_node = launch_ros.actions.Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
-        name='joint_state_publisher'
+        name='joint_state_publisher',
+        parameters=[{'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
     
     spawn_joint_state_broadcaster = Node(
         package='controller_manager',
         executable='spawner.py',
         arguments=['joint_state_broadcaster', '-c', '/controller_manager'],
-        output='screen',
-    )
+        output='screen')
    
     rviz_node = launch_ros.actions.Node(
         package='rviz2',
@@ -74,6 +80,7 @@ def generate_launch_description():
         name='rviz2',
         output='screen',
         arguments=['-d', LaunchConfiguration('rvizconfig')],
+        parameters=[{'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
     
     # Make sure spawn_husky_velocity_controller starts after spawn_joint_state_broadcaster
@@ -95,7 +102,7 @@ def generate_launch_description():
     # Gazebo client
     gzclient = ExecuteProcess(
         cmd=['gzclient'],
-        output='screen',
+        output='screen'
         # condition=IfCondition(LaunchConfiguration('gui')),
     )
 
@@ -104,7 +111,8 @@ def generate_launch_description():
       package='gazebo_ros',
       executable='spawn_entity.py',
       arguments=['-entity', 'husky', '-topic', 'robot_description'],
-      output='screen'
+      output='screen',
+      parameters=[{'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
     
     robot_localization_node = launch_ros.actions.Node(
@@ -112,7 +120,7 @@ def generate_launch_description():
        executable='ekf_node',
        name='ekf_filter_node',
        output='screen',
-       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'), {'use_sim_time':  LaunchConfiguration('use_sim_time')}]
+       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'),{'use_sim_time': True}]
     )
 
     
@@ -132,11 +140,10 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(PathJoinSubstitution(
         [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))
         
-           
+                               
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
                                             description='Absolute path to robot urdf file'),
-        
         launch.actions.DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, description='Absolute path to rviz config file'),
         launch.actions.DeclareLaunchArgument(name='use_sim_time', default_value='True', description='Flag to enable use_sim_time'),
         #launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen'),

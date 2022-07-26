@@ -26,7 +26,7 @@ def generate_launch_description():
             # remappings=[('cloud_in', [LaunchConfiguration(variable_name='scanner'), '/velodyne_points']),
             #             ('scan', [LaunchConfiguration(variable_name='scanner'), '/scan'])],
             remappings=[('cloud_in', 'velodyne_points'),
-                        ('scan', 'scanner/scan')],
+                        ('scan', 'scan')],
             parameters=[{
                 'target_frame': 'velodyne',
                 'transform_tolerance': 0.01,
@@ -39,7 +39,8 @@ def generate_launch_description():
                 'range_min': 0.45,
                 'range_max': 4.0,
                 'use_inf': True,
-                'inf_epsilon': 1.0
+                'inf_epsilon': 1.0,
+                'use_sim_time': True,
             }],
             name='pointcloud_to_laserscan'
         )

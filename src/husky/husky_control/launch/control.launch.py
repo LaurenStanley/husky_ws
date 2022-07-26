@@ -19,7 +19,7 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_node',
         output='screen',
-        parameters=[config_husky_ekf],
+        parameters=[config_husky_ekf, {'use_sim_time':True}],
         )
     ld.add_action(node_ekf)
 
