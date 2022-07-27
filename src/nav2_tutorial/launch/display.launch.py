@@ -2,6 +2,7 @@ import launch
 from launch.substitutions import Command, LaunchConfiguration
 import launch_ros
 import os
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, IncludeLaunchDescription, RegisterEventHandler
 from launch.event_handlers import OnProcessExit
@@ -18,10 +19,6 @@ def generate_launch_description():
     world_path=os.path.join(pkg_share_tutorial, 'world/my_world.sdf')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/urdf_config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
-    nav2_dir = FindPackageShare(package='nav2_bringup').find('nav2_bringup')
-    nav2_launch_dir = os.path.join(nav2_dir, 'launch')
-    namespace = LaunchConfiguration('namespace')
-    use_namespace = LaunchConfiguration('use_namespace')
     
     config_husky_velocity_controller = PathJoinSubstitution(
         [FindPackageShare("husky_control"), "config", "control.yaml"])
@@ -138,9 +135,9 @@ def generate_launch_description():
     # Launch husky_control/control.launch.py which is just robot_localization.
     launch_scan_from_velodye = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(PathJoinSubstitution(
-        [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))
+        [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))  
         
-                               
+                             
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
                                             description='Absolute path to robot urdf file'),
