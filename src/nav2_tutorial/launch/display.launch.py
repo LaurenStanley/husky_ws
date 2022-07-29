@@ -17,7 +17,7 @@ def generate_launch_description():
     
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
     world_path=os.path.join(pkg_share_tutorial, 'world/my_world.sdf')
-    default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/urdf_config.rviz')
+    default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
     
     config_husky_velocity_controller = PathJoinSubstitution(
@@ -137,6 +137,14 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(PathJoinSubstitution(
         [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))  
         
+    launch_slam = IncludeLaunchDescription(
+    	PythonLaunchDescriptionSource(PathJoinSubstitution(
+    	[FindPackageShare("slam_toolbox"), 'launch', 'online_async_launch.py'])))
+    	
+    launch_navigation = IncludeLaunchDescription(
+    	PythonLaunchDescriptionSource(PathJoinSubstitution(
+    	[FindPackageShare("nav2_bringup"), 'launch', 'navigation_launch.py'])))
+    	       
                              
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
@@ -157,6 +165,7 @@ def generate_launch_description():
         launch_husky_control,
         launch_husky_teleop_base,
         launch_scan_from_velodye,
-        
+        launch_slam,
+        #launch_navigation        
     ])
 

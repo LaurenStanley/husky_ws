@@ -31,8 +31,8 @@
             <remapping>~/out:=imu/data_raw</remapping>
           </ros>
           <initial_orientation_as_reference>false</initial_orientation_as_reference>
-          <odometry_frame>odom</odometry_frame>
-          <robot_base_frame>base_link</robot_base_frame>
+          <!--<odometry_frame>odom</odometry_frame>
+          <robot_base_frame>base_link</robot_base_frame>-->
         </plugin>
         <always_on>true</always_on>
         <update_rate>100</update_rate>
