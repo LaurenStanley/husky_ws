@@ -119,6 +119,15 @@ def generate_launch_description():
        output='screen',
        parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'),{'use_sim_time': True}]
     )
+    
+    robot_navsat_node = launch_ros.actions.Node(
+       package='robot_localization',
+       executable='navsat_transform_node',
+       name='navsat_transform_node',
+       respawn='true',
+       remappings=[('imu','imu/data_raw'),('gps/fix', 'gps/data')],
+       parameters=[{'magnetic_declination_radians': 0.0},{'yaw_offset': 1.5708},{'broadcast_utm_transform': True},{'publish_filtered_gps': True}]
+    )
 
     
     # Launch husky_control/control.launch.py which is just robot_localization.
@@ -161,6 +170,7 @@ def generate_launch_description():
         gzclient,
         spawn_entity,
         robot_localization_node,
+        robot_navsat_node,
         rviz_node,
         launch_husky_control,
         launch_husky_teleop_base,
