@@ -117,7 +117,7 @@ def generate_launch_description():
        executable='ekf_node',
        name='ekf_filter_node',
        output='screen',
-       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'),{'use_sim_time': True}]
+       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf2.yaml'),{'use_sim_time': True}]
     )
     
     robot_navsat_node = launch_ros.actions.Node(
