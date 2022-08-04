@@ -12,7 +12,7 @@ def generate_launch_description():
         [FindPackageShare('husky_control'),
         'config',
         'localization.yaml'],
-    )
+    )    
 
     node_ekf = Node(
         package='robot_localization',

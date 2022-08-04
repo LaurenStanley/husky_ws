@@ -14,9 +14,9 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     pkg_share_descrip = launch_ros.substitutions.FindPackageShare(package='husky_description').find('husky_description')
     pkg_share_tutorial = launch_ros.substitutions.FindPackageShare(package='nav2_tutorial').find('nav2_tutorial')
-    
+    print(pkg_share_tutorial)
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
-    world_path=os.path.join(pkg_share_tutorial, 'world/my_world.sdf')
+    world_path=os.path.join(pkg_share_tutorial, 'world/my_world1.sdf')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
     
@@ -115,9 +115,17 @@ def generate_launch_description():
     robot_localization_node = launch_ros.actions.Node(
        package='robot_localization',
        executable='ekf_node',
-       name='ekf_filter_node',
+       name='ekf_node',
        output='screen',
-       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf2.yaml'),{'use_sim_time': True}]
+       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'),{'use_sim_time': True}]
+    )
+    
+    global_localization_node = launch_ros.actions.Node(
+       package='robot_localization',
+       executable='ekf_node',
+       name='ekf_node',
+       output='screen',
+       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf_global.yaml'),{'use_sim_time': True}]
     )
     
     robot_navsat_node = launch_ros.actions.Node(
@@ -125,7 +133,7 @@ def generate_launch_description():
        executable='navsat_transform_node',
        name='navsat_transform_node',
        respawn='true',
-       remappings=[('imu','imu/data_raw'),('gps/fix', 'gps/data')],
+       remappings=[('imu','imu/data'),('gps/fix', 'gps/data')],
        parameters=[{'magnetic_declination_radians': 0.0},{'yaw_offset': 1.5708},{'broadcast_utm_transform': True},{'publish_filtered_gps': True}]
     )
 
@@ -141,7 +149,6 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(PathJoinSubstitution(
         [FindPackageShare("husky_control"), 'launch', 'teleop_base.launch.py'])))
         
-    # Launch husky_control/control.launch.py which is just robot_localization.
     launch_scan_from_velodye = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(PathJoinSubstitution(
         [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))  
@@ -171,8 +178,9 @@ def generate_launch_description():
         spawn_entity,
         robot_localization_node,
         robot_navsat_node,
+        global_localization_node,
         rviz_node,
-        launch_husky_control,
+        #launch_husky_control,
         launch_husky_teleop_base,
         launch_scan_from_velodye,
         launch_slam,

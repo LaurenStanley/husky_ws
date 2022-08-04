@@ -36,12 +36,12 @@ ekf_node:
     #imu1_differential: true
     #imu1_queue_size: 10
     #imu1_remove_gravitational_acceleration: trues
-    odom1: odometry/gps
-    odom1_config: [true,  true,  false,
+    #odom1: odometry/gps
+    #odom1_config: [true,  true,  false,
                    false, false, false,
                    false, false, false,
                    false, false, false,
                    false, false, false]
-    odom1_differential: false
+    #odom1_differential: false
     
 

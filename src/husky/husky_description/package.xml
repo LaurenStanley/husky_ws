@@ -25,7 +25,7 @@
   <depend>flir_camera_description</depend>
   <depend>realsense2_description</depend>
   <depend>xacro</depend>
-  <depend>lms1xx</depend>
+  <!--<depend>lms1xx</depend>-->
   <depend>velodyne_description</depend>
 
   <depend>urdf</depend>
