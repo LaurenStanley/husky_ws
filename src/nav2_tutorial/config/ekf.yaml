@@ -21,15 +21,15 @@ ekf_node:
     odom0_pose_rejection_threshold: 5.0
     odom0_twist_rejection_threshold: 1.0
     
-    #imu0: /imu/data
-    #imu0_config: [false, false, false,
-    #              false, false, false,
-    #              false, false, false,
-    #              false, false, true,
-    #              true, false, false]
-    #imu0_differential: false
-    #imu0_queue_size: 12 #Freq. of topic was ~ 100 Hz, so set it to 100/10=10 Hz (try 2-3 Hz above/ below)
-    #imu0_remove_gravitational_acceleration: true
+    imu0: /imu/data
+    imu0_config: [false, false, false,
+                  false, false, false,
+                  false, false, false,
+                  false, false, true,
+                  true, false, false]
+    imu0_differential: false
+    imu0_queue_size: 12 #Freq. of topic was ~ 100 Hz, so set it to 100/10=10 Hz (try 2-3 Hz above/ below)
+    imu0_remove_gravitational_acceleration: true
     
     #odom1: /odometry/gps
     #odom1_config: [true,  true,  false,

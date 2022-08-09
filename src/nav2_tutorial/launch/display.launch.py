@@ -16,7 +16,7 @@ def generate_launch_description():
     pkg_share_tutorial = launch_ros.substitutions.FindPackageShare(package='nav2_tutorial').find('nav2_tutorial')
     print(pkg_share_tutorial)
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
-    world_path=os.path.join(pkg_share_tutorial, 'world/my_world1.sdf')
+    world_path=os.path.join(pkg_share_tutorial, 'world/my_world.sdf')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
     
@@ -176,9 +176,9 @@ def generate_launch_description():
         gzserver,
         gzclient,
         spawn_entity,
-        robot_localization_node,
         robot_navsat_node,
-        global_localization_node,
+        robot_localization_node,
+        #global_localization_node,
         rviz_node,
         #launch_husky_control,
         launch_husky_teleop_base,
