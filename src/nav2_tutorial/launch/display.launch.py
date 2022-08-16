@@ -16,7 +16,7 @@ def generate_launch_description():
     pkg_share_tutorial = launch_ros.substitutions.FindPackageShare(package='nav2_tutorial').find('nav2_tutorial')
     print(pkg_share_tutorial)
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
-    world_path=os.path.join(pkg_share_tutorial, 'world/my_world.sdf')
+    world_path=os.path.join(pkg_share_tutorial, 'world/cone_world.world')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
     
