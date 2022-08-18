@@ -17,22 +17,15 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
 
 install(
   DIRECTORY src launch rviz config world scripts
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-  PROGRAMS 
-  	scripts/nav_to_pose.py 
-  	scripts/robot_navigator.py
-  DESTINATION lib/${PROJECT_NAME}
+install(PROGRAMS
+  scripts/nav_to_pose.py
 )
-  
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

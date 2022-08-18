@@ -79,7 +79,7 @@ def generate_launch_description():
         arguments=['-d', LaunchConfiguration('rvizconfig')],
         parameters=[{'use_sim_time':  LaunchConfiguration('use_sim_time')}]
     )
-    
+       
     # Make sure spawn_husky_velocity_controller starts after spawn_joint_state_broadcaster
     diffdrive_controller_spawn_callback = RegisterEventHandler(
         event_handler=OnProcessExit(
