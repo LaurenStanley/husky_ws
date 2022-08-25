@@ -234,7 +234,7 @@ global_costmap:
           obstacle_range: 25.0
           raytrace_range: 25.0
           clearing: True
-          marking: True
+          #marking: True
           data_type: "LaserScan"
           inf_is_valid: False
         pointcloud:
@@ -243,7 +243,7 @@ global_costmap:
           obstacle_range: 25.0
           raytrace_range: 25.0
           data_type: "PointCloud2"
-          clearing: True
+          #clearing: True
           marking: True
           inf_is_valid: False
       static_layer:

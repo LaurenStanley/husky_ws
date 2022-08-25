@@ -14,11 +14,32 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     pkg_share_descrip = launch_ros.substitutions.FindPackageShare(package='husky_description').find('husky_description')
     pkg_share_tutorial = launch_ros.substitutions.FindPackageShare(package='nav2_tutorial').find('nav2_tutorial')
+    bringup_dir = launch_ros.substitutions.FindPackageShare(package='nav2_bringup').find('nav2_bringup')
+    launch_dir = os.path.join(bringup_dir, 'launch')
+    #bringup_dir = get_package_share_directory('nav2_bringup')
     print(pkg_share_tutorial)
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
-    world_path=os.path.join(pkg_share_tutorial, 'world/cone_world.world')
+    world_path=os.path.join(pkg_share_tutorial, 'world/cone_world.sdf')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
+    
+    slam = LaunchConfiguration('slam')
+    namespace = LaunchConfiguration('namespace')
+    use_namespace = LaunchConfiguration('use_namespace')
+    map_yaml_file = LaunchConfiguration('map')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    params_file = LaunchConfiguration('params_file')
+    default_bt_xml_filename = LaunchConfiguration('default_bt_xml_filename')
+    autostart = LaunchConfiguration('autostart')
+
+    # Launch configuration variables specific to simulation
+    rviz_config_file = LaunchConfiguration('rviz_config_file')
+    use_simulator = LaunchConfiguration('use_simulator')
+    use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
+    use_rviz = LaunchConfiguration('use_rviz')
+    headless = LaunchConfiguration('headless')
+    world = LaunchConfiguration('world')
+
     
     config_husky_velocity_controller = PathJoinSubstitution(
         [FindPackageShare("husky_control"), "config", "control.yaml"])
@@ -43,6 +64,12 @@ def generate_launch_description():
         ]
     )
     robot_description = {"robot_description": robot_description_content}
+    
+    
+    declare_map_yaml_cmd = DeclareLaunchArgument(
+        'map',
+        default_value=os.path.join(bringup_dir, 'maps', 'turtlebot3_world.yaml'),
+        description='Full path to map file to load')
     
     spawn_husky_velocity_controller = Node(
         package='controller_manager',
@@ -160,6 +187,19 @@ def generate_launch_description():
     launch_navigation = IncludeLaunchDescription(
     	PythonLaunchDescriptionSource(PathJoinSubstitution(
     	[FindPackageShare("nav2_bringup"), 'launch', 'navigation_launch.py'])))
+    	
+    bringup_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(PathJoinSubstitution([FindPackageShare("nav2_bringup"), 'launch', 'bringup_launch.py'])),
+        launch_arguments={'namespace': namespace,
+                          'use_namespace': use_namespace,
+                          'slam': slam,
+                          'map': map_yaml_file,
+                          'use_sim_time': use_sim_time,
+                          'params_file': params_file,
+                          'default_bt_xml_filename': default_bt_xml_filename,
+                          'autostart': autostart
+                          }.items()
+                          )
     	       
                              
     return launch.LaunchDescription([
@@ -167,7 +207,13 @@ def generate_launch_description():
                                             description='Absolute path to robot urdf file'),
         launch.actions.DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, description='Absolute path to rviz config file'),
         launch.actions.DeclareLaunchArgument(name='use_sim_time', default_value='True', description='Flag to enable use_sim_time'),
-        #launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen'),
+        launch.actions.DeclareLaunchArgument(name='namespace', default_value=''),
+        launch.actions.DeclareLaunchArgument(name='use_namespace', default_value='false'),
+        launch.actions.DeclareLaunchArgument(name='slam', default_value='false'),
+        launch.actions.DeclareLaunchArgument(name='map', default_value=os.path.join(bringup_dir, 'maps', 'turtlebot3_world.yaml')),
+        launch.actions.DeclareLaunchArgument(name='params_file', default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml')),
+        launch.actions.DeclareLaunchArgument(name='default_bt_xml_filename', default_value=os.path.join(launch_ros.substitutions.FindPackageShare(package='nav2_bt_navigator').find('nav2_bt_navigator'), 'behavior_trees', 'navigate_w_replanning_and_recovery.xml')),
+        launch.actions.DeclareLaunchArgument(name='autostart', default_value='true'),
         
         joint_state_publisher_node,
         robot_state_publisher_node,
@@ -184,6 +230,7 @@ def generate_launch_description():
         launch_husky_teleop_base,
         launch_scan_from_velodye,
         launch_slam,
-        #launch_navigation        
+        #launch_navigation   
+        bringup_cmd     
     ])
 
