@@ -5,12 +5,12 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     lc = LaunchContext()
-    joy_type = EnvironmentVariable('CPR_JOY_TYPE', default_value='logitech')
-
-
+    joy_type = EnvironmentVariable('CPR_JOY_TYPE', default_value='flysky')
+    
     filepath_config_joy = PathJoinSubstitution(
         [FindPackageShare('husky_control'), 'config', ('teleop_' + joy_type.perform(lc) + '.yaml')]
     )
+    print(FindPackageShare('husky_control'), 'config', ('teleop_' + joy_type.perform(lc) + '.yaml'))
 
     node_joy = Node(
         namespace='joy_teleop',
