@@ -19,12 +19,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY src launch rviz config world scripts
+  DIRECTORY launch rviz config world scripts
   DESTINATION share/${PROJECT_NAME}
 )
 
 install(PROGRAMS
   scripts/nav_to_pose.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)
