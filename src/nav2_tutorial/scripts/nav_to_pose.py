@@ -19,7 +19,7 @@ class GoalPosePublisherNode(Node):
         goal_pose = PoseStamped()
         goal_pose.header.frame_id = 'map'
         goal_pose.header.stamp.sec = 0
-        goal_pose.pose.position.x = 3.0
+        goal_pose.pose.position.x = 4.0
         goal_pose.pose.position.y = 0.0
         goal_pose.pose.position.z = 0.0
         goal_pose.pose.orientation.x = 0.0

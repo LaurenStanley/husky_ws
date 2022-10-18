@@ -200,7 +200,16 @@ def generate_launch_description():
                           'autostart': autostart
                           }.items()
                           )
-    	       
+                          
+    launch_speed_limit = launch_ros.actions.Node(
+       package='nav2_tutorial',
+       executable='set_speed_limit.py',
+       name='set_speed_limit')
+       
+    enforce_speed_limit = launch_ros.actions.Node(
+       package='nav2_tutorial',
+       executable='enforce_speed_limit.py',
+       name='enforce_speed_limit')
                              
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
@@ -231,6 +240,8 @@ def generate_launch_description():
         launch_scan_from_velodye,
         launch_slam,
         #launch_navigation   
-        bringup_cmd     
+        bringup_cmd,
+        launch_speed_limit,
+        enforce_speed_limit     
     ])
 
