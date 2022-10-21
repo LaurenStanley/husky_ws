@@ -1,2 +1,1 @@
-source;share/husky_gazebo/environment/ament_prefix_path.sh
-source;share/husky_gazebo/environment/path.sh
+/home/lauren/husky_ws/build/husky_gazebo/ament_cmake_environment_hooks/local_setup.dsv

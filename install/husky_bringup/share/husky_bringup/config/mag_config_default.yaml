@@ -1,4 +1,1 @@
-use_mag: false
-mag_bias_x: 0
-mag_bias_y: 0
-mag_bias_z: 0
+/home/lauren/husky_ws/src/husky/husky_bringup/config/mag_config_default.yaml

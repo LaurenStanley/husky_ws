@@ -12,14 +12,14 @@ def generate_launch_description():
         [FindPackageShare('husky_control'),
         'config',
         'localization.yaml'],
-    )
+    )    
 
     node_ekf = Node(
         package='robot_localization',
         executable='ekf_node',
         name='ekf_node',
         output='screen',
-        parameters=[config_husky_ekf],
+        parameters=[config_husky_ekf, {'use_sim_time':True}],
         )
     ld.add_action(node_ekf)
 

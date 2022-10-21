@@ -1,1 +1,1 @@
-controller_manager;diff_drive_controller;husky_description;interactive_marker_twist_server;joint_state_broadcaster;joint_trajectory_controller;joy;robot_localization;robot_state_publisher;teleop_twist_joy;twist_mux
+/home/lauren/husky_ws/build/husky_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/husky_control
