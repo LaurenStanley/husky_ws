@@ -377,6 +377,8 @@
             <Cx>648.5</Cx>
             <Cy>366.8340148925781</Cy>
             <hackBaseline>0.0</hackBaseline>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
 
@@ -433,6 +435,8 @@
             COULD NOT FIND <Cx>658.8206787109375</Cx>
             COULD NOT FIND <Cy>372.25787353515625</Cy>
             DONE <hackBaseline>0.0</hackBaseline> -->
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
       </gazebo>
@@ -484,6 +488,8 @@
             <Cx>659.3049926757812</Cx>
             <Cy>371.39849853515625</Cy>
             <hackBaseline>0.12</hackBaseline>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
 
@@ -519,6 +525,8 @@
             <Cx>658.8206787109375</Cx>
             <Cy>372.25787353515625</Cy>
             <hackBaseline>0.12</hackBaseline>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
       </gazebo>
@@ -547,6 +555,8 @@
             IMU frame offset copied from an actual ZED2 camera
             REMOVED <xyzOffset>-0.002 -0.023 -0.002</xyzOffset>
             REMOVED <rpyOffset>0.0014025 -0.0000012 -0.0016915</rpyOffset> -->
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
       </gazebo>
@@ -657,6 +667,8 @@
             <min_range>0.9</min_range>
             <max_range>130.0</max_range>
             <gaussian_noise>0.008</gaussian_noise>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
       </xacro:if>
@@ -681,7 +693,7 @@
               </vertical>
             </scan>
             <range>
-              <min>0.3</min>
+              <min>0.9</min>
               <max>131.0</max>
               <resolution>0.001</resolution>
             </range>
@@ -702,6 +714,8 @@
             <min_range>0.9</min_range>
             <max_range>130.0</max_range>
             <gaussian_noise>0.008</gaussian_noise>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
           </plugin>
         </sensor>
       </xacro:unless>

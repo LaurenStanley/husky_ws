@@ -1,3 +1,8 @@
-log/
-build/
-install/
+#Colcon Output
+log
+build
+install
+
+#WIP Packages
+src/gps_goal
+src/gps_goal1

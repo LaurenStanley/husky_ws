@@ -18,8 +18,8 @@ def generate_launch_description():
         package='interactive_marker_twist_server',
         executable='marker_server',
         name='twist_server_node',
-        remappings={('cmd_vel', 'twist_marker_server/cmd_vel')},
-        parameters=[filepath_config_interactive_markers],
+        remappings={('cmd_vel1', 'twist_marker_server/cmd_vel')},
+        parameters=[filepath_config_interactive_markers,{'use_sim_time':True}],
         output='screen',
     )
 
@@ -28,7 +28,7 @@ def generate_launch_description():
         executable='twist_mux',
         output='screen',
         remappings={('/cmd_vel_out', '/husky_velocity_controller/cmd_vel_unstamped')},
-        parameters=[filepath_config_twist_mux]
+        parameters=[filepath_config_twist_mux,{'use_sim_time':True}]
     )
 
     ld = LaunchDescription()

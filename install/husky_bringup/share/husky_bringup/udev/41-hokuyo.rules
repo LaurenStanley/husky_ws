@@ -1,1 +1,1 @@
-SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Hokuyo*", SYMLINK+="hokuyo hokuyo_$attr{devpath}", MODE="0666"
+/home/lauren/husky_ws/src/husky/husky_bringup/udev/41-hokuyo.rules
