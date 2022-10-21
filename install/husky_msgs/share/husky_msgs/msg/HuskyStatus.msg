@@ -1,1 +1,0 @@
-/home/lauren/husky_ws/src/husky/husky_msgs/msg/HuskyStatus.msg
