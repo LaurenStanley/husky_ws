@@ -18,7 +18,7 @@ def generate_launch_description():
         package='interactive_marker_twist_server',
         executable='marker_server',
         name='twist_server_node',
-        remappings={('cmd_vel1', 'twist_marker_server/cmd_vel')},
+        remappings={('cmd_vel', 'twist_marker_server/cmd_vel')},
         parameters=[filepath_config_interactive_markers,{'use_sim_time':True}],
         output='screen',
     )

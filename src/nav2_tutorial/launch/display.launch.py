@@ -19,7 +19,7 @@ def generate_launch_description():
     #bringup_dir = get_package_share_directory('nav2_bringup')
     print(pkg_share_tutorial)
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
-    world_path=os.path.join(pkg_share_tutorial, 'world/cone_world.sdf')
+    world_path=os.path.join(pkg_share_tutorial, 'world/one_cone.world')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
     #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
     
@@ -221,7 +221,7 @@ def generate_launch_description():
         launch.actions.DeclareLaunchArgument(name='slam', default_value='false'),
         launch.actions.DeclareLaunchArgument(name='map', default_value=os.path.join(bringup_dir, 'maps', 'turtlebot3_world.yaml')),
         launch.actions.DeclareLaunchArgument(name='params_file', default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml')),
-        launch.actions.DeclareLaunchArgument(name='default_bt_xml_filename', default_value=os.path.join(launch_ros.substitutions.FindPackageShare(package='nav2_bt_navigator').find('nav2_bt_navigator'), 'behavior_trees', 'navigate_w_replanning_and_recovery.xml')),
+        launch.actions.DeclareLaunchArgument(name='default_bt_xml_filename', default_value=os.path.join(launch_ros.substitutions.FindPackageShare(package='nav2_bt_navigator').find('nav2_bt_navigator'), 'behavior_trees', 'follow_point.xml')),
         launch.actions.DeclareLaunchArgument(name='autostart', default_value='true'),
         
         joint_state_publisher_node,
@@ -238,9 +238,9 @@ def generate_launch_description():
         #launch_husky_control,
         launch_husky_teleop_base,
         launch_scan_from_velodye,
-        launch_slam,
+        #launch_slam,
         #launch_navigation   
-        bringup_cmd,
+        #bringup_cmd,
         launch_speed_limit,
         enforce_speed_limit     
     ])

@@ -35,6 +35,8 @@ install(PROGRAMS
   scripts/nav_to_pose.py
   scripts/set_speed_limit.py
   scripts/enforce_speed_limit.py
+  scripts/get_obstacle_positions.py
+  scripts/nav_script.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

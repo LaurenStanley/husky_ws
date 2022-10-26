@@ -20,7 +20,7 @@ Panels:
         - /MarkerArray1
         - /MarkerArray1/Topic1
       Splitter Ratio: 0.5138888955116272
-    Tree Height: 595
+    Tree Height: 597
   - Class: nav2_rviz_plugins/Navigation 2
     Name: Navigation 2
 Visualization Manager:
@@ -65,8 +65,6 @@ Visualization Manager:
           Value: false
         inertial_link:
           Value: false
-        map:
-          Value: true
         odom:
           Value: false
         rear_bumper_link:
@@ -119,60 +117,59 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        map:
-          odom:
-            base_link:
-              base_footprint:
-                {}
-              front_bumper_link:
-                {}
-              front_left_wheel:
-                {}
-              front_right_wheel:
-                {}
-              gps_link:
-                {}
-              imu_link:
-                {}
-              inertial_link:
-                {}
-              rear_bumper_link:
-                {}
-              rear_left_wheel:
-                {}
-              rear_right_wheel:
-                {}
-              top_chassis_link:
-                {}
-              top_plate_link:
-                sensor_arch_mount_link:
-                  velodyne_base_link:
-                    velodyne:
-                      {}
-                  zed2_mountpoint:
-                    zed2_camera_center:
-                      zed2_baro_link:
-                        {}
-                      zed2_left_camera_frame:
-                        zed2_left_camera_optical_frame:
-                          {}
-                        zed2_temp_left_link:
-                          {}
-                      zed2_mag_link:
-                        {}
-                      zed2_right_camera_frame:
-                        zed2_right_camera_optical_frame:
-                          {}
-                        zed2_temp_right_link:
-                          {}
-                top_plate_front_link:
-                  {}
-                top_plate_rear_link:
-                  {}
-              user_rail_link:
-                {}
-            utm:
+        odom:
+          base_link:
+            base_footprint:
               {}
+            front_bumper_link:
+              {}
+            front_left_wheel:
+              {}
+            front_right_wheel:
+              {}
+            gps_link:
+              {}
+            imu_link:
+              {}
+            inertial_link:
+              {}
+            rear_bumper_link:
+              {}
+            rear_left_wheel:
+              {}
+            rear_right_wheel:
+              {}
+            top_chassis_link:
+              {}
+            top_plate_link:
+              sensor_arch_mount_link:
+                velodyne_base_link:
+                  velodyne:
+                    {}
+                zed2_mountpoint:
+                  zed2_camera_center:
+                    zed2_baro_link:
+                      {}
+                    zed2_left_camera_frame:
+                      zed2_left_camera_optical_frame:
+                        {}
+                      zed2_temp_left_link:
+                        {}
+                    zed2_mag_link:
+                      {}
+                    zed2_right_camera_frame:
+                      zed2_right_camera_optical_frame:
+                        {}
+                      zed2_temp_right_link:
+                        {}
+              top_plate_front_link:
+                {}
+              top_plate_rear_link:
+                {}
+            user_rail_link:
+              {}
+          utm:
+            {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -604,8 +601,7 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
-        cluster: true
-        fov_lidar: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -616,7 +612,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: velodyne
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -672,12 +668,12 @@ Visualization Manager:
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1013
+  Height: 1016
   Hide Left Dock: false
   Hide Right Dock: false
   Navigation 2:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000001560000039bfc0200000002fb000000100044006900730070006c006100790073010000003d000002de000000c900fffffffb00000018004e0061007600690067006100740069006f006e002000320100000321000000b7000000b700ffffff000003780000039b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Width: 1236
-  X: 79
+  QMainWindow State: 000000ff00000000fd0000000100000000000001560000039efc0200000002fb000000100044006900730070006c006100790073010000003d000002e0000000c900fffffffb00000018004e0061007600690067006100740069006f006e002000320100000323000000b8000000b700ffffff000002400000039e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Width: 924
+  X: 72
   Y: 27
