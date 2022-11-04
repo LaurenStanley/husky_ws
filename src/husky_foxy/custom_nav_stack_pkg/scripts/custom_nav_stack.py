@@ -161,7 +161,7 @@ class CustomNavigator(Node):
         self.kp = 0.8
         # self.mag_declination = math.radians(-14.87) #14.87° W degrees is for Neumayer III Station, Antarctica (https://latitude.to/articles-by-country/aq/antarctica/27247/neumayer-station-iii)
         self.mag_declination = math.radians(-4.23) # 4.23° W at 0 lat/ long
-        self.imu_heading_offset = math.radians(4.235193576741463 - 90) #At robot's initial spawn position, IMU provides ~ 4.23° heading  which is towards West. Need to account for thus offset. In practice, it shouldn't matter as heading will be calculated from magnetometer readings which are wrt real directions.
+        self.imu_heading_offset = math.radians(4.235193576741463 - 90) #At robot's initial spawn position, IMU provides ~ 4.23° heading  which is towards West. Need to account for this offset. In practice, it shouldn't matter as heading will be calculated from magnetometer readings which are wrt real directions.
         
         
         # time.sleep(5)
@@ -624,8 +624,9 @@ class CustomNavigator(Node):
         print("Reached 2")
         # print("target={} current:{}", target_angle_rad,self.roll)
         # self.move_cmd.angular.z = multiplier * (self.kp * (abs(bearing - self.true_heading) + 0.3))
-        self.move_cmd.angular.z = multiplier * (self.kp * (abs(target_angle_rad) + 0.3))
+        # self.move_cmd.angular.z = multiplier * (self.kp * (abs(target_angle_rad) + 0.3))
         # self.move_cmd.linear.x = abs(self.move_cmd.angular.z / 4)
+        self.move_cmd.angular.z = 0.2
         self.move_cmd.linear.x = 0.1
         # self.move_cmd.angular.z = multiplier * 0.5
         # print(self.move_cmd.angular.z)
