@@ -6,6 +6,8 @@ from rclpy.node import Node
 from visualization_msgs.msg import MarkerArray
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import PoseStamped
+from nav2_tutorial.msg import Penguin
+from mav2_tutorial.msg import PenguinList
 import math
 
 list_of_points = []
@@ -18,8 +20,10 @@ class ObstaclePublisherNode(Node):
 
     def __init__(self):
         super().__init__('target_obstacle_publisher')
+        self.subscriber = self.create_subscription(PenguinList, 'penguin_list',self.penguin_list_callback,10)
         self.subscriber = self.create_subscription(MarkerArray, 'visualization_marker_array', self.marker_array_callback, 10)
         self.subscriber2 = self.create_subscription(Odometry, 'odometry/filtered', self.odometry_callback, 10)
+        
         self.publisher_ = self.create_publisher(PoseStamped, 'goal_pose', 10)
         self.goal_pose_timer_ = self.create_timer(0.1, self.publish_goal_pose)
         
@@ -44,6 +48,10 @@ class ObstaclePublisherNode(Node):
         goal_pose.pose.orientation.w = 1.0
         #speed_limit.speed_limit = 1.0
         self.publisher_.publish(goal_pose)
+        
+    def penguin_list_callback(self, msg):
+    	for i in range(len(msg.penguins)):
+    	    print(penguins[i])
         
     def marker_array_callback(self, msg):
     	global list_of_points
