@@ -44,6 +44,7 @@ install(PROGRAMS
   scripts/enforce_speed_limit.py
   scripts/get_obstacle_positions.py
   scripts/nav_script.py
+  scripts/rosbag_splitter.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

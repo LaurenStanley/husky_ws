@@ -1,0 +1,23 @@
+num = 123
+str = hello
+flt = 12.21
+
+leaf_size_x = 0.1
+leaf_size_y = 0.1
+leaf_size_z = 0.1
+crop_min_x = -50.0f
+crop_min_y = -50.0f
+crop_min_z = -50.0f
+crop_max_x = 50.0f
+crop_max_y = 50.0f
+crop_max_z = 50.0f
+
+ransac_max_iterations = 500
+ransac_distance_threshold = 0.1
+
+cluster_tolerance = 0.3
+cluster_min_size = 30
+cluster_max_size = 25000
+
+fwd_obs_tolerance = 15
+angle_view_degree = 359 

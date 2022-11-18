@@ -51,7 +51,7 @@ class ObstaclePublisherNode(Node):
         
     def penguin_list_callback(self, msg):
     	for i in range(len(msg.penguins)):
-    	    print(penguins[i])
+    	    print(penguins[i])think
         
     def marker_array_callback(self, msg):
     	global list_of_points
