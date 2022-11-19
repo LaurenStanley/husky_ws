@@ -39,9 +39,13 @@ This might take a while (10min)
 
 Running Local Nav
 `ros2 launch nav2_tutorial robot_operations.launch.py`
+
 `ros2 run custom_nav_stack_pkg cpp_executable2`
+
 `python3 ~/husky_ws/src/nav2_tutorial/scripts/client_python.py`
+
 `ros2 launch local_nav.launch.py`
+
 Robot will then approach the nearest obstacle.
 
 DEBUG
