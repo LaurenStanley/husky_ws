@@ -1,12 +1,13 @@
 import launch
+from launch.substitutions import Command, LaunchConfiguration
 import launch_ros
 import os
 
-from launch.actions import  IncludeLaunchDescription, RegisterEventHandler
+from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument, ExecuteProcess, IncludeLaunchDescription, RegisterEventHandler
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
-
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
@@ -14,10 +15,31 @@ def generate_launch_description():
     pkg_share_descrip = launch_ros.substitutions.FindPackageShare(package='husky_description').find('husky_description')
     pkg_share_tutorial = launch_ros.substitutions.FindPackageShare(package='nav2_tutorial').find('nav2_tutorial')
     bringup_dir = launch_ros.substitutions.FindPackageShare(package='nav2_bringup').find('nav2_bringup')
-    
+    launch_dir = os.path.join(bringup_dir, 'launch')
+    #bringup_dir = get_package_share_directory('nav2_bringup')
+    print(pkg_share_tutorial)
     default_model_path = os.path.join(pkg_share_descrip, 'urdf/husky.urdf.xacro')
+    world_path=os.path.join(pkg_share_tutorial, 'world/one_cone.world')
     default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/config.rviz')
+    #default_rviz_config_path = os.path.join(pkg_share_tutorial, 'rviz/nav2_default_view.rviz')
     
+    slam = LaunchConfiguration('slam')
+    namespace = LaunchConfiguration('namespace')
+    use_namespace = LaunchConfiguration('use_namespace')
+    map_yaml_file = LaunchConfiguration('map')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    params_file = LaunchConfiguration('params_file')
+    default_bt_xml_filename = LaunchConfiguration('default_bt_xml_filename')
+    autostart = LaunchConfiguration('autostart')
+
+    # Launch configuration variables specific to simulation
+    rviz_config_file = LaunchConfiguration('rviz_config_file')
+    use_simulator = LaunchConfiguration('use_simulator')
+    use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
+    use_rviz = LaunchConfiguration('use_rviz')
+    headless = LaunchConfiguration('headless')
+    world = LaunchConfiguration('world')
+
     
     config_husky_velocity_controller = PathJoinSubstitution(
         [FindPackageShare("husky_control"), "config", "control.yaml"])
@@ -43,6 +65,11 @@ def generate_launch_description():
     )
     robot_description = {"robot_description": robot_description_content}
     
+    
+    declare_map_yaml_cmd = DeclareLaunchArgument(
+        'map',
+        default_value=os.path.join(bringup_dir, 'maps', 'turtlebot3_world.yaml'),
+        description='Full path to map file to load')
     
     spawn_husky_velocity_controller = Node(
         package='controller_manager',
@@ -89,6 +116,10 @@ def generate_launch_description():
     )
     
     
+    launch_simulation = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(PathJoinSubstitution(
+        [FindPackageShare("nav2_tutorial"), 'launch', 'simulation.launch.py'])))
+    
     robot_localization_node = launch_ros.actions.Node(
        package='robot_localization',
        executable='ekf_node',
@@ -97,6 +128,13 @@ def generate_launch_description():
        parameters=[os.path.join(pkg_share_tutorial, 'config/ekf.yaml'),{'use_sim_time': True}]
     )
     
+    global_localization_node = launch_ros.actions.Node(
+       package='robot_localization',
+       executable='ekf_node',
+       name='ekf_node',
+       output='screen',
+       parameters=[os.path.join(pkg_share_tutorial, 'config/ekf_global.yaml'),{'use_sim_time': True}]
+    )
     
     robot_navsat_node = launch_ros.actions.Node(
        package='robot_localization',
@@ -108,6 +146,11 @@ def generate_launch_description():
     )
 
     
+    # Launch husky_control/control.launch.py which is just robot_localization.
+    launch_husky_control = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(PathJoinSubstitution(
+        [FindPackageShare("husky_control"), 'launch', 'control.launch.py'])))
+
     # Launch husky_control/teleop_base.launch.py which is various ways to tele-op
     # the robot but does not include the joystick. Also, has a twist mux.
     launch_husky_teleop_base = IncludeLaunchDescription(
@@ -118,7 +161,27 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(PathJoinSubstitution(
         [FindPackageShare("pointcloud_to_laserscan"), 'launch', 'sample_pointcloud_to_laserscan_launch.py'])))  
         
-                         
+    launch_slam = IncludeLaunchDescription(
+    	PythonLaunchDescriptionSource(PathJoinSubstitution(
+    	[FindPackageShare("slam_toolbox"), 'launch', 'online_async_launch.py'])))
+    	
+    launch_navigation = IncludeLaunchDescription(
+    	PythonLaunchDescriptionSource(PathJoinSubstitution(
+    	[FindPackageShare("nav2_bringup"), 'launch', 'navigation_launch.py'])))
+    	
+    bringup_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(PathJoinSubstitution([FindPackageShare("nav2_bringup"), 'launch', 'bringup_launch.py'])),
+        launch_arguments={'namespace': namespace,
+                          'use_namespace': use_namespace,
+                          'slam': slam,
+                          'map': map_yaml_file,
+                          'use_sim_time': use_sim_time,
+                          'params_file': params_file,
+                          'default_bt_xml_filename': default_bt_xml_filename,
+                          'autostart': autostart
+                          }.items()
+                          )
+                          
     launch_speed_limit = launch_ros.actions.Node(
        package='nav2_tutorial',
        executable='set_speed_limit.py',
@@ -146,11 +209,20 @@ def generate_launch_description():
         robot_state_publisher_node,
         spawn_joint_state_broadcaster,
         diffdrive_controller_spawn_callback,
+        launch_simulation,
+        #gzserver,
+        #gzclient,
+        #spawn_entity,
         robot_navsat_node,
         robot_localization_node,
+        #global_localization_node,
         rviz_node,
+        #launch_husky_control,
         launch_husky_teleop_base,
         launch_scan_from_velodye,
+        #launch_slam,
+        #launch_navigation   
+        #bringup_cmd,
         launch_speed_limit,
         enforce_speed_limit     
     ])

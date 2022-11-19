@@ -22,10 +22,12 @@ find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(custom_nav_stack_pkg REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Penguin.msg"
   "msg/PenguinList.msg"
+  DEPENDENCIES geometry_msgs
 )
 ament_export_dependencies(rosidl_default_runtime)
 include_directories(include)
@@ -43,7 +45,8 @@ install(PROGRAMS
   scripts/set_speed_limit.py
   scripts/enforce_speed_limit.py
   scripts/get_obstacle_positions.py
-  scripts/nav_script.py
+  scripts/approach_speed_controller.py
+  scripts/client_python.py
   scripts/rosbag_splitter.py
   DESTINATION lib/${PROJECT_NAME}
 )

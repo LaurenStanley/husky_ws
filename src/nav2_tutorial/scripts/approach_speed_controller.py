@@ -92,7 +92,7 @@ class HuskyVelocityPublisherNode(Node):
         
         #(roll, pitch, odometry_pose_theta) = euler_from_quaternion([rot_q.x, rot_q.y, rot_q.z, rot_q.w])
         
-        siny_cosp = 2 * (rot_q.w * rot_q.z + rot_q.x * rot_q.y);
+        siny_cosp = 2 * (rot_q.w * rot_q.z + rot_q.x * rot_q.y)
         cosy_cosp = 1 - 2 * (rot_q.y * rot_q.y + rot_q.z * rot_q.z)
         odometry_pose_theta = math.atan2(siny_cosp, cosy_cosp)
     	

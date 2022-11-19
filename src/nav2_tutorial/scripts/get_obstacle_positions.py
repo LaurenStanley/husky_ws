@@ -6,8 +6,9 @@ from rclpy.node import Node
 from visualization_msgs.msg import MarkerArray
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import PoseStamped
+
 from nav2_tutorial.msg import Penguin
-from mav2_tutorial.msg import PenguinList
+from nav2_tutorial.msg import PenguinList
 import math
 
 list_of_points = []
@@ -51,7 +52,7 @@ class ObstaclePublisherNode(Node):
         
     def penguin_list_callback(self, msg):
     	for i in range(len(msg.penguins)):
-    	    print(penguins[i])think
+    	    print(penguins[i])
         
     def marker_array_callback(self, msg):
     	global list_of_points

@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+
 import rclpy
 #import rospy
 from rclpy.node import Node
@@ -34,13 +35,13 @@ class GoalPosePublisherNode(Node):
         speed_limit.percentage = False
         print(dist)
         if dist < 2:
-        	speed_limit.speed_limit = 0.1
+            speed_limit.speed_limit = 0.1
         else:
-        	speed_limit.speed_limit = 5.0
-        
+            speed_limit.speed_limit = 5.0
+
         #speed_limit.speed_limit = 1.0
         self.publisher_.publish(speed_limit)
-        
+
     def goal_pose_callback(self, msg):
         global goal_pose_x
         global goal_pose_y
