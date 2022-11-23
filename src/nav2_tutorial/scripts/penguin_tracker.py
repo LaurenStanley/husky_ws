@@ -28,7 +28,7 @@ class ObstaclePublisherNode(Node):
         self.subscriber = self.create_subscription(MarkerArray, 'visualization_marker_array', self.marker_array_callback, 10)
         self.subscriber2 = self.create_subscription(Odometry, 'odometry/filtered', self.odometry_callback, 10)
         
-        self.publisher_ = self.create_publisher(PenguinList, 'penguin_list', 10)
+        self.publisher = self.create_publisher(PenguinList, 'penguin_list', 10)
         #self.publisher_ = self.create_publisher(PoseStamped, 'goal_pose', 10)
         #self.goal_pose_timer_ = self.create_timer(0.1, self.publish_goal_pose)
         self.penguin_timer_ = self.create_timer(0.1, self.publish_penguins)
@@ -38,25 +38,24 @@ class ObstaclePublisherNode(Node):
         global penguin_list
         global list_of_points
         global penguin_label_count
-        final_penguin_list = PenguinList()
         sorted_penguin_list = []
         already_exists = False
         for i in range(len(list_of_points)):
             for j in range(len(penguin_list)):
-                dist = (penguin_list[j].point.x - list_of_points[0][0])**2 + (penguin_list[j].point.y - list_of_points[0][1])**2
+                dist = (penguin_list[j].x - list_of_points[0][0])**2 + penguin_list[j] - list_of_points[0][1]
                 if dist < 5.0:
-                    sorted_penguin_list.append(penguin_list[j])
+                    sorted_penguin_list.append(penguin_list[i])
                     already_exists = True
             if not already_exists:
                 new_penguin = Penguin()
-                new_penguin.point.x = list_of_points[0][0]
-                new_penguin.point.y = list_of_points[0][1]
-                new_penguin.point.z = 0.0
+                new_penguin.x = list_of_points[0][0]
+                new_penguin.y = list_of_points[0][1]
+                new_penguin.z = 0
                 new_penguin.label = str(penguin_label_count)
                 penguin_label_count += 1
                 sorted_penguin_list.append(new_penguin)
-        final_penguin_list.penguins = sorted_penguin_list    
-        self.publisher_.publish(final_penguin_list)
+            
+        self.publisher_.publish(sorted_penguin_list)
 
     def publish_goal_pose(self):     
         global x

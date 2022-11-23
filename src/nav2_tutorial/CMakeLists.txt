@@ -47,7 +47,6 @@ install(PROGRAMS
   scripts/get_obstacle_positions.py
   scripts/approach_speed_controller.py
   scripts/client_python.py
-  scripts/rosbag_splitter.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
