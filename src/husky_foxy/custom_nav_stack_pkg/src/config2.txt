@@ -16,7 +16,7 @@ ransac_max_iterations = 500
 ransac_distance_threshold = 0.1
 
 cluster_tolerance = 0.3
-cluster_min_size = 30
+cluster_min_size = 20
 cluster_max_size = 25000
 
 fwd_obs_tolerance = 15

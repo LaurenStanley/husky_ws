@@ -98,6 +98,7 @@ target_link_libraries (cpp_executable2 ${PCL_LIBRARIES})
 # Install Python executables
 install(PROGRAMS
   scripts/custom_nav_stack.py
+  scripts/mode_control.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

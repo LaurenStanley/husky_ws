@@ -605,22 +605,22 @@ int main(int argc, char * argv[])
 {
   
   //Socket implementation ref: https://realpython.com/python-sockets/#echo-client, https://stackoverflow.com/questions/20732980/how-to-use-socket-with-a-python-client-and-a-c-server
-  int serverSock=socket(AF_INET, SOCK_STREAM, 0);
-  sockaddr_in serverAddr;
-  serverAddr.sin_family = AF_INET;
-  serverAddr.sin_port = SERVER_PORT;
-  serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+  //int serverSock=socket(AF_INET, SOCK_STREAM, 0);
+  //sockaddr_in serverAddr;
+  //serverAddr.sin_family = AF_INET;
+  //serverAddr.sin_port = SERVER_PORT;
+  //serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
   /* bind (this socket, local address, address length)
      bind server socket (serverSock) to server address (serverAddr).  
      Necessary so that server can use a specific port */ 
-  bind(serverSock, (struct sockaddr*)&serverAddr, sizeof(struct sockaddr));
+  //bind(serverSock, (struct sockaddr*)&serverAddr, sizeof(struct sockaddr));
   // wait for a client
   /* listen (this socket, request queue length) */
-  std::cout << "Waiting to listen on server socket" << std::endl;
-  listen(serverSock,1);
-  std::cout << "Listen complete" << std::endl;
-  clientSock=accept(serverSock,(struct sockaddr*)&clientAddr, &sin_size);
-  std::cout << "Socket connected" << std::endl;
+  //std::cout << "Waiting to listen on server socket" << std::endl;
+  //listen(serverSock,1);
+  //std::cout << "Listen complete" << std::endl;
+  //clientSock=accept(serverSock,(struct sockaddr*)&clientAddr, &sin_size);
+  //std::cout << "Socket connected" << std::endl;
   
   
   

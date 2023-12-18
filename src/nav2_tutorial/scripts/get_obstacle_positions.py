@@ -1,5 +1,7 @@
 #! /usr/bin/env python3
 
+# Convert pointcloud obstacle readout to list of penguins
+
 import rclpy
 #import rospy
 from rclpy.node import Node
@@ -25,7 +27,7 @@ class ObstaclePublisherNode(Node):
     def __init__(self):
         super().__init__('target_obstacle_publisher')
         self.subscriber = self.create_subscription(PenguinList, 'penguin_list',self.penguin_list_callback,10)
-        self.subscriber = self.create_subscription(MarkerArray, 'visualization_marker_array', self.marker_array_callback, 10)
+        self.subscriber1 = self.create_subscription(MarkerArray, 'visualization_marker_array', self.marker_array_callback, 10)
         self.subscriber2 = self.create_subscription(Odometry, 'odometry/filtered', self.odometry_callback, 10)
         
         self.publisher_ = self.create_publisher(PenguinList, 'penguin_list', 10)
@@ -43,47 +45,27 @@ class ObstaclePublisherNode(Node):
         already_exists = False
         for i in range(len(list_of_points)):
             for j in range(len(penguin_list)):
-                dist = (penguin_list[j].point.x - list_of_points[0][0])**2 + (penguin_list[j].point.y - list_of_points[0][1])**2
+                dist = (penguin_list[j].point.x - list_of_points[i][0])**2 + (penguin_list[j].point.y - list_of_points[i][1])**2
                 if dist < 5.0:
+                    print('Penguin Exists')
                     sorted_penguin_list.append(penguin_list[j])
                     already_exists = True
             if not already_exists:
                 new_penguin = Penguin()
-                new_penguin.point.x = list_of_points[0][0]
-                new_penguin.point.y = list_of_points[0][1]
+                new_penguin.point.x = list_of_points[i][0]
+                new_penguin.point.y = list_of_points[i][1]
                 new_penguin.point.z = 0.0
                 new_penguin.label = str(penguin_label_count)
                 penguin_label_count += 1
                 sorted_penguin_list.append(new_penguin)
         final_penguin_list.penguins = sorted_penguin_list    
         self.publisher_.publish(final_penguin_list)
-
-    def publish_goal_pose(self):     
-        global x
-        global y
-        if len(list_of_points) > 0:
-            x = list_of_points[0][0] + odometry_pose_x
-            y = list_of_points[0][1] + odometry_pose_y
-        #print(list_of_points[0][0], odometry_pose_x, x)
-        #print(list_of_points[0][1], odometry_pose_y, y)
-        goal_pose = PoseStamped()
-        goal_pose.header.frame_id = 'odom'
-        goal_pose.header.stamp.sec = 0
-        goal_pose.pose.position.x = x
-        goal_pose.pose.position.y = y
-        goal_pose.pose.position.z = 0.0
-        goal_pose.pose.orientation.x = 0.0
-        goal_pose.pose.orientation.y = 0.0
-        goal_pose.pose.orientation.z = 0.0
-        goal_pose.pose.orientation.w = 1.0
-        #speed_limit.speed_limit = 1.0
-        self.publisher_.publish(goal_pose)
-        
+    
     def penguin_list_callback(self, msg):
         global penguin_list
         penguin_list = []
         for i in range(len(msg.penguins)):
-            print(msg.penguins[i])
+            #print(msg.penguins[i])
             penguin_list.append(msg.penguins[i])
 
     def marker_array_callback(self, msg):
@@ -95,8 +77,8 @@ class ObstaclePublisherNode(Node):
             point.append(msg.markers[i].pose.position.y)
             point.append(msg.markers[i].pose.position.z)
             list_of_points.append(point)
-    	#print(list_of_points[0][0])
-
+            #print(point)
+    	
     def odometry_callback(self, msg):
         global odometry_pose_x
         global odometry_pose_y
